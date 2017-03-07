@@ -1,0 +1,59 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	var ShellImpl = require('$UI/system/lib/portal/shellImpl');
+	require("cordova!cordova-plugin-globalization");
+
+	var Model = function() {
+		this.callParent();
+		
+		this.localizeInit();
+		this.shellImpl = new ShellImpl(this, {
+			contentsXid : "pages",
+			wingXid : "wing",
+			pageMappings : {
+				"main" : {
+					url : require.toUrl('./main.w')
+				}
+			}
+		});
+	};
+	//所有的文字都通过绑定来动态获取，从而实现国际化
+	Model.prototype.localizeInit = function() {
+		window.localize = function(){};
+		window.localize.language = this.loadLanguage();
+		window.localize.currentLanguage = this.getCurrentLanguage();
+		window.localize.getLocalize = function (key)
+		{
+			if(window.localize.language !== "" && window.localize.language[key]){
+				
+				return window.localize.language[key][window.localize.currentLanguage];
+			}
+			return "nokey_" + key;
+		};
+	};
+	
+	Model.prototype.loadLanguage = function() {
+		var url = require.toUrl("./resource/json/language.json");
+		$.ajaxSettings.async = false;
+		var dataret;
+		$.getJSON(url, function(data) {
+			dataret = data;
+		}); 
+		return dataret;     
+	};
+	
+	Model.prototype.getCurrentLanguage = function() {
+	
+		return "zh_CN";
+	};
+	
+
+	Model.prototype.modelLoad = function(event) {
+	
+		justep.Shell.showPage("main");
+	};
+
+
+	return Model;
+});
