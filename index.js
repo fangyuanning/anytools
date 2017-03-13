@@ -14,6 +14,36 @@ define(function(require) {
 			pageMappings : {
 				"main" : {
 					url : require.toUrl('./main.w')
+				},
+				"lighting" : {
+					url : require.toUrl('./apps/lighting.w')
+				},
+				"clockNotify" : {
+					url : require.toUrl('./apps/clockNotify.w')
+				},
+				"gps" : {
+					url : require.toUrl('./apps/gps.w')
+				},
+				"notepad" : {
+					url : require.toUrl('./apps/notepad.w')
+				},
+				"oil" : {
+					url : require.toUrl('./apps/oil.w')
+				},
+				"recordAudio" : {
+					url : require.toUrl('./apps/prize.w')
+				},
+				"recordVideo" : {
+					url : require.toUrl('./apps/recordVideo.w')
+				},
+				"calc" : {
+					url : require.toUrl('./apps/calc.w')
+				},
+				"browseDir" : {
+					url : require.toUrl('./apps/browseDir.w')
+				},
+				"prize" : {
+					url : require.toUrl('./apps/prize.w')
 				}
 			}
 		});

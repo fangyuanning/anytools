@@ -1,7 +1,7 @@
-<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" class=" grid91">  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:374px;left:535px;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="false" xid="usedData" idColumn="fID"><column label="功能ID" name="fID" type="String" xid="xid1"></column>
+<div xmlns="http://www.w3.org/1999/xhtml" component="$UI/system/components/justep/window/window" class=" grid91">  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:374px;left:535px;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="usedData" idColumn="fID"><column label="功能ID" name="fID" type="String" xid="xid1"></column>
   <column label="图标" name="fImageUrl" type="String" xid="xid2"></column>
   <column label="名称" name="fName" type="String" xid="xid3"></column>
-  <data xid="default1">[{&quot;fID&quot;:&quot;1&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;消防&quot;},{&quot;fID&quot;:&quot;2&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;我是&quot;},{&quot;fID&quot;:&quot;3&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;你好&quot;},{&quot;fID&quot;:&quot;4&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;电灯&quot;},{&quot;fID&quot;:&quot;5&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;空气&quot;},{&quot;fID&quot;:&quot;6&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;笑声&quot;},{&quot;fID&quot;:&quot;7&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;恐惧&quot;},{&quot;fID&quot;:&quot;8&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;流量&quot;},{&quot;fID&quot;:&quot;9&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;信仰&quot;},{&quot;fID&quot;:&quot;10&quot;,&quot;fIcon&quot;:&quot;./anytools/resource/img/g8.png&quot;,&quot;fName&quot;:&quot;幸运&quot;}]</data></div></div>
+  <data xid="default1">[{&quot;fID&quot;:&quot;1&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;calc&quot;},{&quot;fID&quot;:&quot;2&quot;,&quot;fImageUrl&quot;:&quot;f1.png&quot;,&quot;fName&quot;:&quot;lighting&quot;},{&quot;fID&quot;:&quot;3&quot;,&quot;fImageUrl&quot;:&quot;f10.png&quot;,&quot;fName&quot;:&quot;prize&quot;},{&quot;fID&quot;:&quot;4&quot;,&quot;fImageUrl&quot;:&quot;f2.png&quot;,&quot;fName&quot;:&quot;电灯&quot;},{&quot;fID&quot;:&quot;5&quot;,&quot;fImageUrl&quot;:&quot;g10.png&quot;,&quot;fName&quot;:&quot;空气&quot;},{&quot;fID&quot;:&quot;6&quot;,&quot;fImageUrl&quot;:&quot;g4.png&quot;,&quot;fName&quot;:&quot;笑声&quot;},{&quot;fID&quot;:&quot;7&quot;,&quot;fImageUrl&quot;:&quot;n16.png&quot;,&quot;fName&quot;:&quot;恐惧&quot;},{&quot;fID&quot;:&quot;8&quot;,&quot;fImageUrl&quot;:&quot;q8.png&quot;,&quot;fName&quot;:&quot;流量&quot;},{&quot;fID&quot;:&quot;9&quot;,&quot;fImageUrl&quot;:&quot;n17.png&quot;,&quot;fName&quot;:&quot;信仰&quot;},{&quot;fID&quot;:&quot;10&quot;,&quot;fImageUrl&quot;:&quot;f9.png&quot;,&quot;fName&quot;:&quot;幸运&quot;}]</data></div></div>
   <div component="$UI/system/components/justep/panel/panel" class="x-panel x-card x-full" xid="panel1">
    <div class="x-panel-top" xid="top1" visible="true">
     <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
@@ -12,18 +12,16 @@
   <span xid="span2" bind-text='window.localize.getLocalize("anytools")'></span></div>
      <div class="x-titlebar-right reverse" xid="right1"></div></div> </div> 
    <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel">
-   <div class="x-panel-content  x-scroll-view" xid="content2" _xid="C7711AEBD9600001A9F1DB6B1E203EB0" style="top: 0px; bottom: 0px;">
+   <div class="x-panel-content  x-scroll-view" xid="content2" _xid="C7711AEBD9600001A9F1DB6B1E203EB0" style=" bottom: 0px;">
     <div component="$UI/system/components/justep/contents/contents" class="x-contents x-full" active="0" xid="contents" slidable="true" swipe="true" onActiveChange="contentsActiveChange">
-     <div class="x-contents-content" xid="commonUseContent"><div component="$UI/system/components/justep/contents/contents" class="x-contents x-full" active="0" xid="contents2">
+     <div class="x-contents-content  x-scroll-view" xid="commonUseContent"><div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView2">
+   
+   
    <div component="$UI/system/components/bootstrap/row/row" class="row grid" xid="usedRow">
-   <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1" xid="col1">
-    <div class="card" xid="div24">
-     
-  <img src="$UI/anytools/resource/img/g8.png" alt="" xid="image1" style="width:80px;"></img><span class="title" xid="span27">下载</span>
-  </div> </div> 
    </div></div></div>
-     <div class="x-contents-content x-cards" xid="allContent" onActive="allContentActive">
-      </div> 
+     <div class="x-contents-content  x-scroll-view" xid="allContent" onActive="allContentActive" onactive="allContentActive">
+      <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">
+   <div component="$UI/system/components/bootstrap/row/row" class="row grid" xid="allRow"></div></div></div> 
      <div class="x-contents-content x-content-on-left x-content-on-remoting-sibling" xid="enjoyContent">
       <div component="$UI/system/components/bootstrap/carousel/carousel" class="x-carousel carousel" xid="carousel1" style="height:288px;" interval="4" auto="true">
        <ol class="carousel-indicators" xid="ol1" style="margin-bottom:20px;"></ol>
