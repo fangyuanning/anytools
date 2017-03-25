@@ -70,6 +70,15 @@ define(function(require){
 		actionFun[1] = "calc";
 		actionFun[2] = "lighting";
 		actionFun[3] = "prize";
+		actionFun[4] = "browseDir";
+		actionFun[5] = "clockNotify";
+		actionFun[6] = "gps";
+		actionFun[7] = "notepad";
+		actionFun[8] = "oil";
+		actionFun[9] = "recordAudio";
+		actionFun[10] = "recordVideo";
+		actionFun[11] = "hourseCalc";
+
 		justep.Shell.showPage(actionFun[actionId]);
 	};
 	

@@ -37,10 +37,13 @@ define(function(require) {
 					url : require.toUrl('./apps/recordVideo.w')
 				},
 				"calc" : {
-					url : require.toUrl('./apps/calc.w')
+					url : require.toUrl('./apps/calc/calc.w')
 				},
 				"browseDir" : {
 					url : require.toUrl('./apps/browseDir.w')
+				},
+				"hourseCalc" : {
+					url : require.toUrl('./apps/hourseCalc.w')
 				},
 				"prize" : {
 					url : require.toUrl('./apps/prize.w')

@@ -7,5 +7,15 @@
   "lighting":{"zh_CN":"手电筒","en":"Lighting"},
   "prize":{"zh_CN":"抽奖","en":"Prize"},
   "calc":{"zh_CN":"计算器","en":"Calc"},
+  
+  "browseDir":{"zh_CN":"目录浏览","en":"browseDir"},
+  "clockNotify":{"zh_CN":"闹钟","en":"clockNotify"},
+  "gps":{"zh_CN":"查看定位卫星","en":"view gps star"},
+  "notepad":{"zh_CN":"记事本","en":"notepad"},
+  "oil":{"zh_CN":"油耗统计","en":"oil"},
+  "recordAudio":{"zh_CN":"录音","en":"recordAudio"},
+  "recordVideo":{"zh_CN":"录像","en":"recordAudio"},
+  "hourseCalc":{"zh_CN":"房贷计算器","en":"hourseCalc"},
+  
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}
 }
