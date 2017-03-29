@@ -38,7 +38,7 @@ define(function(require){
             this.comp(dataName).each(function(param){
                 var addContent = self.comp(rowName);
                 var i = param.row.val("fID");
-                var div = $("<div xid='action"+ i +"' class='col cell col-xs-3 col-sm-2 col-md-2 col-lg-1' data-bind = 'event:{click:$model._callModelFn.bind($model, OnClickApp)}' ><div class='card' xid='carddiv"+i+"'><img src='"+require.toUrl("$UI/anytools/resource/img/" +param.row.val("fImageUrl") )+"'  xid='image"+i+"' style='width:80px'></img><span class='title' xid='spantxt"+i+"'>"+ window.localize.getLocalize(param.row.val("fName")) +"</span></div></div>");
+                var div = $("<div xid='action"+ i +"' class='col cell col-xs-3 col-sm-2 col-md-2 col-lg-1' data-bind = 'event:{click:$model._callModelFn.bind($model, OnClickApp)}' ><div class='card' xid='carddiv"+i+"'><img src='"+require.toUrl("$UI/anytools/resource/img/" +param.row.val("fImageUrl") )+"'  xid='image"+i+"' style='width:60px'></img><span class='title' xid='spantxt"+i+"'>"+ window.localize.getLocalize(param.row.val("fName")) +"</span></div></div>");
                 justep.Bind.addNodes(addContent.domNode, div);
 
               } ); 

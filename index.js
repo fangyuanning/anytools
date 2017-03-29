@@ -3,7 +3,8 @@ define(function(require) {
 	var justep = require("$UI/system/lib/justep");
 	var ShellImpl = require('$UI/system/lib/portal/shellImpl');
 	require("cordova!cordova-plugin-globalization");
-
+	require("$UI/anytools/appVersionChecker");
+	
 	var Model = function() {
 		this.callParent();
 		

@@ -1,5 +1,5 @@
 .grid91 .grid {
-  /*	
+  /*
 		list-style: none;
 
         display: flex;
@@ -7,9 +7,9 @@
         
 		flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-*/
+	*/
   margin: 0;
-  padding: 5px;
+  padding: 0;
   border: 0;
 }
 .grid91 .cell {
@@ -22,18 +22,18 @@
         -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
+
+		width: 80px;
     */
-		width: auto;
   padding: 0;
-  margin: 0;
 }
 .grid91 .cell .card {
-  width: 100px;
+  width: 60px;
   margin: 10px auto;
   text-align: center;
   border: 0px solid #888;
   border-radius: 6px;
-  padding: 10px;
+  padding: 5px;
   box-sizing: content-box;
 }
 .grid91 .cell .card i {
