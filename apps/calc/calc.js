@@ -18,14 +18,14 @@ define(function(require){
 
 
 	Model.prototype.modelUnLoad = function(event){
-		
+		cordova.plugins.screenorientation.setOrientation(this.oldOrientation);
 	};
 
 
 
 
 	Model.prototype.modelInactive = function(event){
-		cordova.plugins.screenorientation.setOrientation(this.oldOrientation);
+		
 	};
 
 
@@ -34,7 +34,6 @@ define(function(require){
 	Model.prototype.modelActive = function(event){
 		//alert("modelActive");
 	};
-
 
 
 

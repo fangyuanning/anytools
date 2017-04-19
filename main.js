@@ -78,6 +78,7 @@ define(function(require){
 		actionFun[9] = "recordAudio";
 		actionFun[10] = "recordVideo";
 		actionFun[11] = "hourseCalc";
+		actionFun[12] = "scan";
 
 		justep.Shell.showPage(actionFun[actionId]);
 	};

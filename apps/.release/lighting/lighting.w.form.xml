@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cqiEFZz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqiEFZz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cqiEFZz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqiEFZz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/input/range,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqiEFZz" class="cqiEFZz"></div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onunLoad:modelUnLoad;onLoad:modelLoad" __cid="cqiEFZz" class="cqiEFZz"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAVVjMr-iosstatusbar cqiEFZz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqiEFZz"> 
     <div class="x-panel-top cqiEFZz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqiEFZz"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqiEFZz" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;手电筒&quot;}" __cid="cqiEFZz"> 
@@ -18,10 +18,10 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cqiEFZz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqiEFZz"> 
+    <div class="x-panel-content cqiEFZz" xid="content1" style="position:relative;top:100px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqiEFZz"> 
       <div component="$model/UI2/system/components/justep/list/list" class="x-list cqiEFZz" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cqiEFZz"> 
         <ul class="x-list-template hide cqiEFZz" xid="listTemplateUl1" __cid="cqiEFZz"> 
-          <li xid="li1" __cid="cqiEFZz" class="cqiEFZz">
+          <li xid="li1" style="vertical-align:bottom;width:100%;" __cid="cqiEFZz" class="cqiEFZz">
             <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cqiEFZz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqiEFZz"> 
               <div class="x-col cqiEFZz" xid="col1" __cid="cqiEFZz"/>  
               <div class="x-col cqiEFZz" xid="col2" __cid="cqiEFZz">
@@ -32,22 +32,39 @@
               </div>  
               <div class="x-col cqiEFZz" xid="col3" __cid="cqiEFZz"/>
             </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqiEFZz" xid="row6" style="height:150px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqiEFZz"> 
+              <div class="x-col cqiEFZz" xid="col17" __cid="cqiEFZz"/>  
+              <div class="x-col cqiEFZz" xid="col18" __cid="cqiEFZz"/>  
+              <div class="x-col cqiEFZz" xid="col19" __cid="cqiEFZz"/>
+            </div>
             <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cqiEFZz" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqiEFZz"> 
               <div class="x-col cqiEFZz" xid="col6" __cid="cqiEFZz">
-                <div class="progress cqiEFZz" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" __cid="cqiEFZz"> 
-                  <div class="progress-bar progress-bar-success cqiEFZz" role="progressbar" xid="progressBar1" __cid="cqiEFZz"> 
-                    <span xid="span3" __cid="cqiEFZz" class="cqiEFZz">0%</span>
-                  </div> 
+                <input component="$model/UI2/system/components/justep/input/range" xid="flashRange" type="range" data-bind="component:{name:'$model/UI2/system/components/justep/input/range'}" data-events="onChange:flashRangeChange" data-config="{&quot;max&quot;:20,&quot;min&quot;:2}" __cid="cqiEFZz" class="cqiEFZz"/>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cqiEFZz" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqiEFZz"> 
+                  <div class="x-col cqiEFZz" xid="col7" __cid="cqiEFZz">
+                    <span xid="minHz" __cid="cqiEFZz" class="cqiEFZz">2hz</span>
+                  </div>  
+                  <div class="x-col cqiEFZz" xid="col8" __cid="cqiEFZz">
+                    <span xid="flashhz" __cid="cqiEFZz" class="cqiEFZz">10hz</span>
+                  </div>  
+                  <div class="x-col cqiEFZz" xid="col9" __cid="cqiEFZz">
+                    <span xid="maxHz" style="text-align:right;" __cid="cqiEFZz" class="cqiEFZz">20hz</span>
+                  </div>
                 </div>
               </div>  
-              <div class="x-col cqiEFZz" xid="col4" __cid="cqiEFZz"> 
-                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cqiEFZz" xid="button1" style="position:relative;top:50%;width:80px;vertical-align:middle;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openLightClick" __cid="cqiEFZz"> 
+              <div class="x-col x-col-fixed cqiEFZz" xid="col4" style="width:auto;" __cid="cqiEFZz"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cqiEFZz" xid="flash" style="position:relative;top:50%;width:80px;vertical-align:middle;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:flashClick" data-config="{&quot;label&quot;:&quot;闪烁&quot;}" __cid="cqiEFZz"> 
                   <i xid="i2" __cid="cqiEFZz" class="cqiEFZz"/>  
-                  <span xid="span2" __cid="cqiEFZz" class="cqiEFZz"/>
+                  <span xid="span2" __cid="cqiEFZz" class="cqiEFZz">闪烁</span>
                 </a> 
               </div>  
-              <div class="x-col cqiEFZz" xid="col5" __cid="cqiEFZz"/>
-            </div>
+              <div class="x-col x-col-fixed cqiEFZz" xid="col5" style="width:auto;" __cid="cqiEFZz">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cqiEFZz" xid="carflash" style="position:relative;top:50%;width:80px;vertical-align:middle;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:carflashClick" data-config="{&quot;label&quot;:&quot;交通&quot;}" __cid="cqiEFZz"> 
+                  <i xid="i3" __cid="cqiEFZz" class="cqiEFZz"/>  
+                  <span xid="span3" __cid="cqiEFZz" class="cqiEFZz">交通</span>
+                </a>
+              </div> 
+            </div> 
           </li>
         </ul> 
       </div>

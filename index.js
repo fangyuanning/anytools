@@ -48,6 +48,9 @@ define(function(require) {
 				},
 				"prize" : {
 					url : require.toUrl('./apps/prize.w')
+				},
+				"scan" : {
+					url : require.toUrl('./apps/scan.w')
 				}
 			}
 		});

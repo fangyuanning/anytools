@@ -15,7 +15,7 @@
   "oil":{"zh_CN":"油耗统计","en":"oil"},
   "recordAudio":{"zh_CN":"录音","en":"recordAudio"},
   "recordVideo":{"zh_CN":"录像","en":"recordAudio"},
-  "hourseCalc":{"zh_CN":"房贷计算器","en":"hourseCalc"},
+  "hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
   
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}
 }
