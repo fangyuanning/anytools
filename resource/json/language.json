@@ -4,10 +4,17 @@
   "enjoy":{"zh_CN":"娱乐","en":"Enjoy"},
   "mine":{"zh_CN":"我的","en":"Mine"},
   "refreshdown":{"zh_CN":"下拉刷新...","en":"dragdown refresh..."},
+  "open":{"zh_CN":"打开","en":"browse"},
+  "autoopen":{"zh_CN":"自动打开","en":"auto browse"},
+  "record":{"zh_CN":"记录","en":"record"},
+  "openNull":{"zh_CN":"请先扫一扫！","en":"openNull"},
+  "delete":{"zh_CN":"删除","en":"delete"},
+  "clear":{"zh_CN":"清除","en":"clear"},
+  "clearall":{"zh_CN":"全部清除","en":"clear all"},
+  
   "lighting":{"zh_CN":"手电筒","en":"Lighting"},
   "prize":{"zh_CN":"抽奖","en":"Prize"},
   "calc":{"zh_CN":"计算器","en":"Calc"},
-  
   "browseDir":{"zh_CN":"目录浏览","en":"browseDir"},
   "clockNotify":{"zh_CN":"闹钟","en":"clockNotify"},
   "gps":{"zh_CN":"查看卫星","en":"view gps star"},
@@ -16,6 +23,7 @@
   "recordAudio":{"zh_CN":"录音","en":"recordAudio"},
   "recordVideo":{"zh_CN":"录像","en":"recordAudio"},
   "hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
+  "scan":{"zh_CN":"扫一扫","en":"Scan"},
   
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}
 }

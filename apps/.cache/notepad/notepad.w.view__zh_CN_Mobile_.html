@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cvyI3En" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvyI3En" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cvyI3En" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvyI3En" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
   <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
-  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cvyI3En" class="cvyI3En"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onActive:modelActive;onunLoad:modelUnLoad;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cvyI3En" class="cvyI3En"/>  
   <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQZ73iy-iosstatusbar cvyI3En" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvyI3En"> 
     <div class="x-panel-top cvyI3En" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvyI3En"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cvyI3En" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cvyI3En"> 
@@ -18,7 +18,12 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cvyI3En" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvyI3En"/>  
+    <div class="x-panel-content cvyI3En" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvyI3En"> 
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cvyI3En" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:checkbox1Change" __cid="cvyI3En"> 
+        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cvyI3En" class="cvyI3En"></input>  
+        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cvyI3En" class="cvyI3En"></label> 
+      </span> 
+    </div>  
     <style __cid="cvyI3En" class="cvyI3En">.x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQZ73iy-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
   </div> 
 </div>
