@@ -24,6 +24,7 @@
   "recordVideo":{"zh_CN":"录像","en":"recordAudio"},
   "hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
   "scan":{"zh_CN":"扫一扫","en":"Scan"},
+  "audiocallphone":{"zh_CN":"语音拨号","en":"Scan"},
   
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}
 }

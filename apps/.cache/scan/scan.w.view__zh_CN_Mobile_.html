@@ -25,8 +25,8 @@
         <ul class="x-list-template hide cNniMBz" xid="listTemplateUl1" __cid="cNniMBz"> 
           <li xid="li1" __cid="cNniMBz" class="cNniMBz"> 
             <div component="$model/UI2/system/components/justep/row/row" class="x-row cNniMBz" xid="row1" style="height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNniMBz"> 
-              <div class="x-col x-col-center cNniMBz" xid="col1" __cid="cNniMBz"> 
-                <div component="$model/UI2/system/components/justep/output/output" class="x-output cNniMBz" xid="address" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cNniMBz"/> 
+              <div class="x-col x-col-center text-success cNniMBz" xid="col1" __cid="cNniMBz"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cNniMBz" xid="address" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;dataType&quot;:&quot;String&quot;}" __cid="cNniMBz"/> 
               </div> 
             </div>  
             <div component="$model/UI2/system/components/justep/row/row" class="x-row cNniMBz" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNniMBz"> 
@@ -44,10 +44,10 @@
               </div> 
             </div>  
             <div component="$model/UI2/system/components/justep/row/row" class="x-row cNniMBz" xid="row3" style="height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNniMBz"> 
-              <div class="x-col x-col-center cNniMBz" xid="col9" __cid="cNniMBz"> 
-                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cNniMBz" xid="browseCheckBox" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:openCheckBoxChange" __cid="cNniMBz"> 
+              <div class="x-col x-col-fixed x-col-center cNniMBz" xid="col9" style="width:auto;" __cid="cNniMBz"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cNniMBz" xid="browseCheckBox" label="自动打开" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;自动打开&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:openCheckBoxChange" __cid="cNniMBz"> 
                   <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cNniMBz" class="cNniMBz"></input>  
-                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNniMBz" class="cNniMBz"></label> 
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNniMBz" class="cNniMBz">自动打开</label> 
                 </span>  
                 <span xid="span4" __cid="cNniMBz" class="cNniMBz" data-bind="text:window.localize.getLocalize(&quot;autoopen&quot;)"/> 
               </div>  
@@ -75,6 +75,12 @@
                       <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNniMBz" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deletelineClick" data-config="{&quot;label&quot;:&quot;删除&quot;}" __cid="cNniMBz"> 
                         <i xid="i9" __cid="cNniMBz" class="cNniMBz"/>  
                         <span xid="span12" __cid="cNniMBz" class="cNniMBz" data-bind="text:window.localize.getLocalize(&quot;delete&quot;)">删除</span> 
+                      </a> 
+                    </div>  
+                    <div class="x-col x-col-fixed x-col-center cNniMBz" xid="col18" style="width:auto;" __cid="cNniMBz"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNniMBz" xid="openIine" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openIineClick" data-config="{&quot;label&quot;:&quot;打开&quot;}" __cid="cNniMBz"> 
+                        <i xid="i6" __cid="cNniMBz" class="cNniMBz"/>  
+                        <span xid="span8" __cid="cNniMBz" class="cNniMBz" data-bind="text:window.localize.getLocalize(&quot;delete&quot;)">打开</span> 
                       </a> 
                     </div> 
                   </div> 

@@ -51,7 +51,11 @@ define(function(require) {
 				},
 				"scan" : {
 					url : require.toUrl('./apps/scan.w')
+				},
+				"audiocallphone" : {
+					url : require.toUrl('./apps/audioCallPhone.w')
 				}
+				
 			}
 		});
 	};

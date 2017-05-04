@@ -45,15 +45,21 @@ define(function(require){
 
 	Model.prototype.openCheckBoxChange = function(event){
 		this.autoLoad = this.comp("browseCheckBox").get("checked");
-		alert(this.autoLoad);
 		localStorage.setItem(this.STORE_SETTING, "{\"autoOpen\":" + this.autoLoad + "}");
 		
 	};
 
 	Model.prototype.recordBtnClick = function(event){
 		if(this.currentUrl){
-			if( !this.comp("scanlist").find("scanurl", this.currentUrl) ){
-				this.comp("scanlist").newData({scanurl: this.currentUrl});
+			var rows = this.comp('scanlist').find(['scanurl'],[this.currentUrl],true,true,true);
+			alert(rows);
+			if(!rows || rows.length<=0){
+				var options = {
+					  defaultValues : [
+					  {scanurl:this.currentUrl}
+					  ]
+				};			
+				this.comp("scanlist").newData(options);
 			}
 		}
 		
@@ -85,9 +91,9 @@ define(function(require){
 	Model.prototype.deletelineClick = function(event){
 		var me = this;
 		var row = event.bindingContext.$object; 
-		setTimeout(10,function(){
+		//setTimeout(10,function(){
 			me.comp("scanlist").remove(row);
-		});
+		//});
 		
 	};
 
@@ -106,6 +112,11 @@ define(function(require){
 
 	Model.prototype.scanBtnClick = function(event){
 		this.beginScan();
+	};
+
+	Model.prototype.openIineClick = function(event){
+		var row = event.bindingContext.$object; 
+		this.onScanResult(row["scalurl"]);
 	};
 
 	return Model;

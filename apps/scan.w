@@ -24,7 +24,7 @@
     <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/list/list" class="x-list" xid="list1">
    <ul class="x-list-template" xid="listTemplateUl1">
     <li xid="li1"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row1" style="height:100px;">
-   <div class="x-col x-col-center" xid="col1"><div component="$UI/system/components/justep/output/output" class="x-output" xid="address"></div></div>
+   <div class="x-col x-col-center text-success" xid="col1"><div component="$UI/system/components/justep/output/output" class="x-output" xid="address" dataType="String" style="width:100%;"></div></div>
    </div>
   <div component="$UI/system/components/justep/row/row" class="x-row" xid="row2">
    <div class="x-col x-col-center" xid="col4" style="text-align:center;"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="扫一扫" xid="scanBtn" onClick="scanBtnClick">
@@ -33,11 +33,12 @@
   <div class="x-col" xid="col11" style="text-align:center;"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="复制" xid="copyBtn" onClick="copyBtnClick">
    <i xid="i5"></i>
    <span xid="span7">复制</span></a></div></div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row3" style="height:100px;">
-   <div class="x-col x-col-center" xid="col9"><span component="$UI/system/components/justep/button/checkbox" class="x-checkbox" xid="browseCheckBox" onChange="openCheckBoxChange"></span>
+   <div class="x-col x-col-fixed x-col-center" xid="col9" style="width:auto;"><span component="$UI/system/components/justep/button/checkbox" class="x-checkbox" xid="browseCheckBox" onChange="openCheckBoxChange" label="自动打开"></span>
   <span xid="span4" bind-text='window.localize.getLocalize("autoopen")'></span></div>
    <div class="x-col x-col-center" xid="col7"><a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="openBtn" onClick="openBtnClick" label="打开">
    <i xid="i1"></i>
-   <span xid="span3">打开</span></a></div>
+   <span xid="span3">打开</span></a>
+  </div>
    <div class="x-col x-col-center" xid="col8"><a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="recordBtn" onClick="recordBtnClick" label="记录">
    <i xid="i2"></i>
    <span xid="span5" bind-text='window.localize.getLocalize("record")'>记录</span></a></div></div>
@@ -52,7 +53,12 @@
       <div class="x-col x-col-fixed x-col-center" xid="col16" style="width:auto;">
        <a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="button4" onClick="deletelineClick" label="删除">
         <i xid="i9"></i>
-        <span xid="span12" bind-text='window.localize.getLocalize("delete")'>删除</span></a> </div> </div> 
+        <span xid="span12" bind-text='window.localize.getLocalize("delete")'>删除</span></a> 
+  </div> 
+  <div class="x-col x-col-fixed x-col-center" xid="col18" style="width:auto;">
+   <a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="openIine" onClick="openIineClick" label="打开">
+    <i xid="i6"></i>
+    <span xid="span8" bind-text='window.localize.getLocalize("delete")'>打开</span></a> </div></div> 
      </li> </ul> </div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row4">
    <div class="x-col" xid="col5"></div>
    <div class="x-col" xid="col6"><a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="clearAll" label="全部删除" onClick="clearAllClick">
