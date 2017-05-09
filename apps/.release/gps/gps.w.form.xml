@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cBzui6r" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBzui6r" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cBzui6r" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBzui6r" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cBzui6r" class="cBzui6r"></div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cBzui6r" class="cBzui6r"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcauIvY3-iosstatusbar cBzui6r" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzui6r"> 
     <div class="x-panel-top cBzui6r" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzui6r"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cBzui6r" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cBzui6r"> 
@@ -18,7 +18,28 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cBzui6r" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzui6r"/>  
+    <div class="x-panel-content cBzui6r" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzui6r">
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cBzui6r" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;gpsstatus&quot;}" __cid="cBzui6r"> 
+        <ul class="x-list-template hide cBzui6r" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cBzui6r"> 
+          <li xid="li1" __cid="cBzui6r" class="cBzui6r">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
+              <div class="x-col cBzui6r" xid="col1" __cid="cBzui6r">
+                <span xid="prn" bind-text="label(&quot;prn&quot;)" __cid="cBzui6r" class="cBzui6r"/>
+              </div>  
+              <div class="x-col cBzui6r" xid="col2" __cid="cBzui6r">
+                <span xid="snr" bind-text="label(&quot;snr&quot;)" __cid="cBzui6r" class="cBzui6r"/>
+              </div>  
+              <div class="x-col cBzui6r" xid="col3" __cid="cBzui6r">
+                <span xid="elevation" bind-text="label(&quot;elevation&quot;)" __cid="cBzui6r" class="cBzui6r"/>
+              </div>  
+              <div class="x-col cBzui6r" xid="col4" __cid="cBzui6r">
+                <span xid="azimuth" bind-text="label(&quot;azimuth&quot;)" __cid="cBzui6r" class="cBzui6r"/>
+              </div>
+            </div>
+          </li>
+        </ul> 
+      </div>
+    </div>  
     <style __cid="cBzui6r" class="cBzui6r">.x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcauIvY3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div> 
 </div>
