@@ -1,5 +1,6 @@
 define(function(require){
 require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/bootstrap/progress/progress');
 require('$model/UI2/system/components/justep/loadingBar/loadingBar');
 require('$model/UI2/system/components/justep/button/button');
 require('$model/UI2/system/components/justep/row/row');
@@ -19,6 +20,6 @@ var __result = __parent1._extend(__parent0).extend({
 	this.__cid='cBzui6r';
 	this._flag_='2a1400a8bde94c4bf413a9ec9d19d864';
 	this.callParent(contextUrl);
- var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":false,"autoNew":false,"confirmDelete":true,"confirmRefresh":true,"defCols":{"azimuth":{"define":"azimuth","label":"方位角","name":"azimuth","relation":"azimuth","type":"String"},"elevation":{"define":"elevation","label":"高度角","name":"elevation","relation":"elevation","type":"String"},"prn":{"define":"prn","label":"ID","name":"prn","relation":"prn","type":"String"},"snr":{"define":"snr","label":"信噪比","name":"snr","relation":"snr","type":"String"}},"directDelete":false,"events":{},"idColumn":"prn","limit":20,"xid":"gpsstatus"});
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":false,"autoNew":false,"confirmDelete":true,"confirmRefresh":true,"defCols":{"azimuth":{"define":"azimuth","label":"方位角","name":"azimuth","relation":"azimuth","type":"String"},"country":{"define":"country","label":"国家","name":"country","relation":"country","rules":{"integer":true},"type":"Integer"},"elevation":{"define":"elevation","label":"高度角","name":"elevation","relation":"elevation","type":"String"},"prn":{"define":"prn","label":"ID","name":"prn","relation":"prn","rules":{"integer":true},"type":"Integer"},"snr":{"define":"snr","label":"信噪比","name":"snr","relation":"snr","type":"String"}},"directDelete":false,"events":{},"idColumn":"prn","initData":"[{\"prn\":2,\"azimuth\":\"20\",\"elevation\":\"30\",\"snr\":\"60\",\"country\":1}]","limit":20,"xid":"gpsstatus"});
 }}); 
 return __result;});

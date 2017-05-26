@@ -3,8 +3,11 @@ define(function(require){
 	var justep = require("$UI/system/lib/justep");
 	require("cordova!com.anytools.cordoa.plugin.gps");
 	var gpsdata;
+	var locationdata;
 	var oldgpsinfo;
 	var locationcol;
+	//var showgpsinfo;
+	var gpslist;
 
 	var Model = function(){
 		this.callParent();
@@ -12,7 +15,10 @@ define(function(require){
 
 	Model.prototype.modelLoad = function(event){
 		gpsdata = this.comp("gpsstatus");
+		locationdata = this.comp("locationdata");
 		locationcol = this.getElementByXid("locationcol");
+		//showgpsinfo = this.getElementByXid("showgpsinfo");
+		gpslist = this.comp("gpslist");
 		window.plugins.GpsStatus.GetGpsStatus("gps", this.gpsListen, this.gpsError);
 		this.onTimerRefresh();
 		
@@ -25,7 +31,7 @@ define(function(require){
 	};
 
 	Model.prototype.gpsListen = function(gpsinfo){
-		alert("gpsListen" + gpsinfo);
+		
 	};
 	
 	Model.prototype.gpsStatusChange = function(gpsinfo){
@@ -33,18 +39,18 @@ define(function(require){
 		{
 			oldgpsinfo = gpsinfo;
 			gpsdata.clear();
-			gpsdata.loadData(gpsinfo);
+			gpsdata.loadData(JSON.parse(gpsinfo));
 		}
 	};
 	
 	Model.prototype.gpsLocationChange = function(gpsinfo){
-		if( gpsinfo )
-			locationcol.innerHTML = gpsinfo;
+		locationdata.clear();
+		locationdata.loadData(JSON.parse(gpsinfo));
 	
 	};
 	
 	Model.prototype.gpsError = function(error){
-		alert("error: " + error);
+		justep.Util.hint(error);
 	};
 
 	Model.prototype.backBtnClick = function(event){
@@ -59,6 +65,25 @@ define(function(require){
 
 	Model.prototype.modelParamsReceive = function(event){
 
+	};
+
+	Model.prototype.gpsstatusCustomRefresh = function(event){
+
+	};
+
+	Model.prototype.modelUnLoad = function(event){
+		this.backBtnClick(null);
+	};
+	
+	Model.prototype.getCountryIcon = function(sign){
+		if(sign == 1)
+			return require.toUrl("$UI/anytools/resource/img/usa.png");
+		else if(sign == 2)
+			return require.toUrl("$UI/anytools/resource/img/usa.png");
+		else if(sign == 3)
+			return require.toUrl("$UI/anytools/resource/img/cn.png");
+		else 
+			return require.toUrl("$UI/anytools/resource/img/usa.png");
 	};
 
 	return Model;

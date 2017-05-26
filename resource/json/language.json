@@ -11,6 +11,7 @@
   "delete":{"zh_CN":"删除","en":"delete"},
   "clear":{"zh_CN":"清除","en":"clear"},
   "clearall":{"zh_CN":"全部清除","en":"clear all"},
+  "add":{"zh_CN":"添加","en":"Add"},
   
   "lighting":{"zh_CN":"手电筒","en":"Lighting"},
   "prize":{"zh_CN":"抽奖","en":"Prize"},
@@ -25,6 +26,21 @@
   "hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
   "scan":{"zh_CN":"扫一扫","en":"Scan"},
   "audiocallphone":{"zh_CN":"语音拨号","en":"Scan"},
+  
+  
+   "appdesc_lighting":{"zh_CN":"手电筒","en":"Lighting"},
+  "appdesc_prize":{"zh_CN":"抽奖","en":"Prize"},
+  "appdesc_calc":{"zh_CN":"计算器","en":"Calc"},
+  "appdesc_browseDir":{"zh_CN":"目录浏览","en":"browseDir"},
+  "appdesc_clockNotify":{"zh_CN":"闹钟","en":"clockNotify"},
+  "appdesc_gps":{"zh_CN":"查看卫星","en":"view gps star"},
+  "appdesc_notepad":{"zh_CN":"记事本","en":"notepad"},
+  "appdesc_oil":{"zh_CN":"油耗统计","en":"oil"},
+  "appdesc_recordAudio":{"zh_CN":"录音","en":"recordAudio"},
+  "appdesc_recordVideo":{"zh_CN":"录像","en":"recordAudio"},
+  "appdesc_hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
+  "appdesc_scan":{"zh_CN":"扫一扫","en":"Scan"},
+  "appdesc_audiocallphone":{"zh_CN":"语音拨号","en":"Scan"},
   
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}
 }

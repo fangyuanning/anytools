@@ -14,10 +14,10 @@ define(function(require){
 	
 
 	Model.prototype.allContentActive = function(event){
-		if( this.allToolsLoaded === false){
-			this.addTools("usedData","allRow",10);
-			this.allToolsLoaded = true;
-		}
+//		if( this.allToolsLoaded === false){
+//			this.addTools("usedData","allRow",10);
+//			this.allToolsLoaded = true;
+//		}
 	};
 	
 
@@ -82,6 +82,19 @@ define(function(require){
 		actionFun[13] = "audiocallphone";
 
 		justep.Shell.showPage(actionFun[actionId]);
+	};
+	
+	Model.prototype.getAppIconPath = function(namePath){
+		return require.toUrl("$UI/anytools/resource/img/" + namePath );
+	};
+	
+	Model.prototype.getAddCommonBtnName = function(val){
+		if( val ){
+			return window.localize.getLocalize("delete");
+		}
+		else{
+			return window.localize.getLocalize("add");
+		}
 	};
 	
 

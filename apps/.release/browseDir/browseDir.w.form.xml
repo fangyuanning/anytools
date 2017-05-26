@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cZVRBBn" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZVRBBn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
-  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cZVRBBn" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZVRBBn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.tableborders.cZVRBBn{background-color: rgb(114, 114, 114); margin: 0; padding: 0; border: 1px; border-style: solid solid solid solid; border-width: thin thin thin thin}</xhtml:style>  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZVRBBn" class="cZVRBBn"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfQfq6r-iosstatusbar cZVRBBn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZVRBBn"> 
     <div class="x-panel-top cZVRBBn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVRBBn"> 
@@ -18,7 +18,36 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cZVRBBn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVRBBn"/>  
+    <div class="x-panel-content cZVRBBn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVRBBn">
+      <div class="progress cZVRBBn" component="$model/UI2/system/components/bootstrap/progress/progress" xid="signal" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuenow&quot;:10}" __cid="cZVRBBn"> 
+        <div class="progress-bar progress-bar-success cZVRBBn" role="progressbar" xid="progressBar1" __cid="cZVRBBn"> 
+          <span xid="span1" __cid="cZVRBBn" class="cZVRBBn">0%</span>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cZVRBBn" xid="list3" style="height:40px;table-layout:fixed;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cZVRBBn"> 
+        <ul class="x-list-template hide cZVRBBn" xid="listTemplateUl3" style="border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
+          <li xid="li3" style="height:40px;" __cid="cZVRBBn" class="cZVRBBn"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row tableborders cZVRBBn" xid="row5" style="background-color:#727272;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZVRBBn"> 
+              <div class="x-col x-col-fixed cZVRBBn" xid="col10" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
+                <span xid="span3" __cid="cZVRBBn" class="cZVRBBn">序号</span>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col11" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
+                <span xid="span4" __cid="cZVRBBn" class="cZVRBBn">信号强度</span>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col12" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
+                <span xid="span5" style="vertical-align:middle;" __cid="cZVRBBn" class="cZVRBBn">可用</span>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col13" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
+                <span xid="span6" __cid="cZVRBBn" class="cZVRBBn">角度</span>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col14" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
+                <span xid="span7" __cid="cZVRBBn" class="cZVRBBn">角度</span>
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>
+    </div>  
     <style __cid="cZVRBBn" class="cZVRBBn">.x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfQfq6r-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div> 
 </div>

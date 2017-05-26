@@ -1,0 +1,15 @@
+.tableborders
+ {
+	background-color:#727272;
+  	margin: 0;
+  	padding: 0;
+ 	border: 1px;
+ 	border-style:solid solid solid solid;border-width:thin thin thin thin;
+}
+
+.tableitem
+{
+	color:#FF8040;
+	text-align:center;
+	vertical-align:middle;
+}

@@ -20,6 +20,40 @@
           </div>
         </div> 
       </div>  
-    <div class="x-panel-content" xid="content1"/>
+    <div class="x-panel-content" xid="content1">
+  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list3" style="height:40px;table-layout:fixed;">
+   <ul class="x-list-template" xid="listTemplateUl3" style="border-style:solid solid solid solid;border-width:thin thin thin thin;">
+    <li xid="li3" style="height:40px;">
+     <div component="$UI/system/components/justep/row/row" class="x-row tableborders" xid="row5" style="background-color:#727272;height:40px;">
+      <div class="x-col x-col-fixed" xid="col10" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;">
+       <span xid="span3">序号</span></div> 
+      <div class="x-col x-col-fixed" xid="col11" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;">
+       <span xid="span4">信号强度</span><div class="progress" component="$UI/system/components/bootstrap/progress/progress" xid="signal" valuenow="40" textVisible="false">
+   <div class="progress-bar progress-bar-success" role="progressbar" xid="progressBar1">
+    <span xid="span1">0%</span></div> </div></div> 
+      <div class="x-col x-col-fixed" xid="col12" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;">
+       <span xid="span5" style="vertical-align:middle;">可用</span></div> 
+      <div class="x-col x-col-fixed" xid="col13" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;">
+       <span xid="span6">角度</span></div> 
+      <div class="x-col x-col-fixed" xid="col14" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;">
+       <span xid="span7">角度</span></div> </div> </li> </ul> </div>
+  <div component="$UI/system/components/justep/list/list" class="x-list" xid="gpslist" data="gpsstatus">
+   <ul class="x-list-template" xid="listTemplateUl1">
+    <li xid="li1">
+     <div component="$UI/system/components/justep/row/row" class="x-row" xid="row1" style="background-color:#727272;height:40px;">
+      <div class="x-col x-col-fixed" xid="col1" style="width:60px;">
+       <span xid="prn" bind-text='val("prn")'></span>
+       <img src="" alt="" xid="country"></img></div> 
+      <div class="x-col x-col-center" xid="col2" style="height:30px;">
+       <div class="progress" component="$UI/system/components/bootstrap/progress/progress" xid="progress1" valuenow="40" textVisible="false" bind-attr-valuenow="val('snr')">
+        <div class="progress-bar progress-bar-success" role="progressbar" xid="progressBar2" bind-css="{'progress-bar-danger':val('snr')&lt;30}" bind-style="{width:val('snr')+'%'}">
+         <span xid="span2">0%</span></div> </div> 
+       <span xid="snrvalue" bind-text='val("snr")' class="pull-right"></span></div> 
+      <div class="x-col x-col-fixed" xid="col3" style="width:60px;">
+       <span xid="activedgps">ok</span></div> 
+      <div class="x-col x-col-fixed" xid="col4" style="width:60px;">
+       <span xid="azimuth" bind-text='val("azimuth")'>1</span></div> 
+      <div class="x-col x-col-fixed" xid="col9" style="width:60px;">
+       <span xid="elevation" bind-text='val("elevation")'></span></div> </div> </li> </ul> </div></div>
   </div> 
 </div>
