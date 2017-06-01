@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cBzui6r" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBzui6r" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
-  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
-  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cBzui6r" class="cBzui6r"/>  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.tableborders.cBzui6r{background-color: rgb(114, 114, 114); margin: 0; padding: 0; border: 1px; border-style: solid solid solid solid; border-width: thin thin thin thin} .tableitem.cBzui6r{color: rgb(255, 128, 64); text-align: center; vertical-align: middle}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onunLoad:modelUnLoad;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cBzui6r" class="cBzui6r"/>  
   <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcauIvY3-iosstatusbar cBzui6r" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzui6r"> 
     <div class="x-panel-top cBzui6r" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzui6r"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cBzui6r" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cBzui6r"> 
@@ -18,18 +18,36 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cBzui6r" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzui6r"> 
-      <div component="$model/UI2/system/components/justep/list/list" class="x-list cBzui6r" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cBzui6r"> 
-        <ul class="x-list-template hide cBzui6r" xid="listTemplateUl2" __cid="cBzui6r"> 
-          <li xid="li2" __cid="cBzui6r" class="cBzui6r"> 
-            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
-              <div class="x-col cBzui6r" xid="col6" __cid="cBzui6r"> 
-                <label xid="label2" __cid="cBzui6r" class="cBzui6r">定位信息:</label> 
+    <div class="x-panel-content cBzui6r" xid="content1" style="background-color:#727272;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzui6r"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cBzui6r" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;locationdata&quot;,&quot;disablePullToRefresh&quot;:true}" __cid="cBzui6r"> 
+        <ul class="x-list-template hide cBzui6r" xid="listTemplateUl2" __cid="cBzui6r" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+          <li xid="li2" style="background-color:#727272;" __cid="cBzui6r" class="cBzui6r"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
+              <div class="x-col x-col-fixed cBzui6r" xid="locationcol" style="width:60px;" __cid="cBzui6r"> 
+                <label xid="locationInfo" __cid="cBzui6r" class="cBzui6r">经度:</label> 
+              </div>  
+              <div class="x-col cBzui6r" xid="col5" __cid="cBzui6r"> 
+                <label xid="lat" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;lat&quot;)"/> 
+              </div>  
+              <div class="x-col x-col-fixed cBzui6r" xid="col6" style="width:60px;" __cid="cBzui6r"> 
+                <label xid="label1" __cid="cBzui6r" class="cBzui6r">纬度:</label> 
+              </div>  
+              <div class="x-col cBzui6r" xid="col15" __cid="cBzui6r"> 
+                <label xid="label2" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;lng&quot;)"/> 
               </div> 
             </div>  
-            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
-              <div class="x-col cBzui6r" xid="locationcol" __cid="cBzui6r"> 
-                <label xid="locationInfo" __cid="cBzui6r" class="cBzui6r"/> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
+              <div class="x-col x-col-fixed cBzui6r" xid="col7" style="width:60px;" __cid="cBzui6r"> 
+                <label xid="label3" __cid="cBzui6r" class="cBzui6r">精度:</label> 
+              </div>  
+              <div class="x-col cBzui6r" xid="col8" __cid="cBzui6r"> 
+                <label xid="label4" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;accuracy&quot;"/> 
+              </div>  
+              <div class="x-col x-col-fixed cBzui6r" xid="col17" style="width:60px;" __cid="cBzui6r"> 
+                <label xid="label6" __cid="cBzui6r" class="cBzui6r">偏向角:</label> 
+              </div>  
+              <div class="x-col cBzui6r" xid="col16" __cid="cBzui6r"> 
+                <label xid="label5" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;bearing&quot;)"/> 
               </div> 
             </div> 
           </li> 
@@ -38,51 +56,50 @@
       <div component="$model/UI2/system/components/justep/list/list" class="x-list cBzui6r" xid="list3" style="height:40px;table-layout:fixed;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cBzui6r"> 
         <ul class="x-list-template hide cBzui6r" xid="listTemplateUl3" __cid="cBzui6r"> 
           <li xid="li3" style="height:40px;" __cid="cBzui6r" class="cBzui6r"> 
-            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row5" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
-              <div class="x-col x-col-fixed cBzui6r" xid="col10" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="span3" __cid="cBzui6r" class="cBzui6r" data-bind="text:label(&quot;prn&quot;)"/> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row5" style="background-color:#727272;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
+              <div class="x-col x-col-fixed tableborders cBzui6r" xid="col10" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;width:60px;" __cid="cBzui6r"> 
+                <span xid="span3" class="tableitem cBzui6r" __cid="cBzui6r">序号</span> 
               </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col11" __cid="cBzui6r"> 
-                <span xid="span4" __cid="cBzui6r" class="cBzui6r" data-bind="text:label(&quot;prn&quot;)"/> 
+              <div class="x-col x-col-fixed tableborders cBzui6r" xid="col11" style="text-align:center;" __cid="cBzui6r"> 
+                <span xid="span4" class="tableitem cBzui6r" style="vertical-align:middle;" __cid="cBzui6r">信号强度</span> 
               </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col12" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="span5" __cid="cBzui6r" class="cBzui6r" data-bind="text:label(&quot;prn&quot;)"/> 
+              <div class="x-col x-col-fixed tableborders cBzui6r" xid="col12" style="text-align:center;width:60px;" __cid="cBzui6r"> 
+                <span xid="span5" style="vertical-align:middle;" class="tableitem cBzui6r" __cid="cBzui6r">可用</span> 
               </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col13" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="span6" __cid="cBzui6r" class="cBzui6r" data-bind="text:label(&quot;prn&quot;)"/> 
+              <div class="x-col x-col-fixed tableborders cBzui6r" xid="col13" style="width:60px;text-align:center;" __cid="cBzui6r"> 
+                <span xid="span6" class="tableitem cBzui6r" style="text-align:center;" __cid="cBzui6r">角度</span> 
               </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col14" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="span7" __cid="cBzui6r" class="cBzui6r" data-bind="text:label(&quot;prn&quot;)"/> 
+              <div class="x-col x-col-fixed tableborders cBzui6r" xid="col14" style="width:60px;text-align:center;" __cid="cBzui6r"> 
+                <span xid="span7" class="tableitem cBzui6r" __cid="cBzui6r">角度</span> 
               </div> 
             </div> 
           </li> 
         </ul> 
       </div>  
-      <div component="$model/UI2/system/components/justep/list/list" class="x-list cBzui6r" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;gpsstatus&quot;}" __cid="cBzui6r"> 
-        <ul class="x-list-template hide cBzui6r" xid="listTemplateUl1" __cid="cBzui6r" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cBzui6r" xid="gpslist" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;gpsstatus&quot;}" __cid="cBzui6r"> 
+        <ul class="x-list-template hide cBzui6r" xid="listTemplateUl1" __cid="cBzui6r" data-bind="foreach:{data:$model.foreach_gpslist($element),afterRender:$model.foreach_afterRender_gpslist.bind($model,$element)}"> 
           <li xid="li1" __cid="cBzui6r" class="cBzui6r"> 
-            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
-              <div class="x-col x-col-fixed cBzui6r" xid="col1" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="prn" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;prn&quot;)"/>  
-                <img src="" alt="" xid="country" __cid="cBzui6r" class="cBzui6r"/> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzui6r" xid="row1" style="background-color:#727272;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzui6r"> 
+              <div class="x-col x-col-fixed cBzui6r" xid="col1" style="width:60px;" __cid="cBzui6r"> 
+                <span xid="prn" style="width:30px;height:30px;" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;prn&quot;)"/>  
+                <img src="" alt="" xid="country" style="width:30px;" height="30px" __cid="cBzui6r" class="cBzui6r" data-bind="attr:{src:$model.getCountryIcon( val(&quot;country&quot;))}"/> 
               </div>  
-              <div class="x-col cBzui6r" xid="col2" __cid="cBzui6r"> 
-                <span xid="snr" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;snr&quot;)"> 
-                  <div class="progress cBzui6r" component="$model/UI2/system/components/bootstrap/progress/progress" xid="signal" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'},value:val(&quot;snr&quot;)" __cid="cBzui6r"> 
-                    <div class="progress-bar progress-bar-success cBzui6r" role="progressbar" xid="progressBar1" __cid="cBzui6r"> 
-                      <span xid="span1" __cid="cBzui6r" class="cBzui6r">0%</span> 
-                    </div> 
+              <div class="x-col x-col-top cBzui6r" xid="col2" style="height:20px;" __cid="cBzui6r"> 
+                <div class="progress cBzui6r" component="$model/UI2/system/components/bootstrap/progress/progress" xid="signal" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'},attr:{valuenow:val('snr')}" data-config="{&quot;textVisible&quot;:false,&quot;valuemax&quot;:50,&quot;valuenow&quot;:40}" __cid="cBzui6r"> 
+                  <div class="progress-bar progress-bar-success cBzui6r" role="progressbar" xid="progressBar1" __cid="cBzui6r" data-bind="css:{'progress-bar-danger':val('snr')&lt;20},style:{width:val('snr')/2+'%'}"> 
+                    <span xid="snrvalue" class="pull-right cBzui6r" __cid="cBzui6r" data-bind="text:val(&quot;snr&quot;)"/>  
+                    <span xid="span1" __cid="cBzui6r" class="cBzui6r">0%</span> 
                   </div> 
-                </span> 
+                </div> 
               </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col3" style="width:40px;" __cid="cBzui6r"> 
+              <div class="x-col x-col-fixed cBzui6r" xid="col3" style="width:60px;" __cid="cBzui6r"> 
+                <span xid="activedgps" __cid="cBzui6r" class="cBzui6r">ok</span> 
+              </div>  
+              <div class="x-col x-col-fixed cBzui6r" xid="col4" style="width:60px;" __cid="cBzui6r"> 
+                <span xid="azimuth" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;azimuth&quot;)">1</span> 
+              </div>  
+              <div class="x-col x-col-fixed cBzui6r" xid="col9" style="width:60px;" __cid="cBzui6r"> 
                 <span xid="elevation" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;elevation&quot;)"/> 
-              </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col4" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="azimuth" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;azimuth&quot;)"/> 
-              </div>  
-              <div class="x-col x-col-fixed cBzui6r" xid="col9" style="width:40px;" __cid="cBzui6r"> 
-                <span xid="span2" __cid="cBzui6r" class="cBzui6r" data-bind="text:val(&quot;elevation&quot;)"/> 
               </div> 
             </div> 
           </li> 

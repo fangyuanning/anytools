@@ -47,3 +47,6 @@
   text-align: center;
   word-wrap: break-word;
 }
+
+panel-heading{ padding:5px 15px;}
+panel-heading i{ margin-right:13px;}

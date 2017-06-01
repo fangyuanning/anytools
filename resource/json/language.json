@@ -42,5 +42,12 @@
   "appdesc_scan":{"zh_CN":"扫一扫","en":"Scan"},
   "appdesc_audiocallphone":{"zh_CN":"语音拨号","en":"Scan"},
   
+  "classname_other":{"zh_CN":"其他工具","en":"Other Tools"},
+  "classname_calc":{"zh_CN":"计算类工具","en":"Calc Tools"},
+  
+  "deletetocomon_succ":{"zh_CN":"删除成功!","en":"Calc Tools"},
+  "addtocomon_succ":{"zh_CN":"添加成功!","en":"Calc Tools"},
+  
+  
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}
 }
