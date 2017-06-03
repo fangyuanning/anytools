@@ -50,16 +50,40 @@ define(function(require){
    
         this.comp(dataName).to(0);
 	};
+	
+	Model.prototype.addGames = function(dataName,rowName){
+        //将detail数据组件中的图片地址加载到新生成content中的img空间中
+        var self=this;
+        var addContent = self.comp(rowName);
+        var childs = addContent.domNode.childNodes; 
+		for(var i = childs.length - 1; i >= 0; i--){ 
+			addContent.domNode.removeChild(childs[i]); 
+		}
+        this.comp(dataName).each(function(param){
+	        var i = param.row.val("fID");
+	        var div = $("<div xid='action"+ i +"' class='col cell col-xs-3 col-sm-2 col-md-2 col-lg-1' data-bind = 'event:{click:$model._callModelFn.bind($model, OnClickGame)}' ><div class='card' xid='carddiv"+i+"'><img src='"+require.toUrl("$UI/anytools/resource/img/" +param.row.val("fImageUrl") )+"'  xid='image"+i+"' style='width:60px'></img><span class='title' xid='spantxt"+i+"'>"+ window.localize.getLocalize(param.row.val("fName")) +"</span></div></div>");
+	            justep.Bind.addNodes(addContent.domNode, div);
+	
+	    } ); 
+   
+        this.comp(dataName).to(0);
+	};
 
 	Model.prototype.modelLoad = function(event){
 		this.loadDataStore();
 		this.updateUsedData();
+		this.updateGameData();
 		//this.addEventListner();
 	};
 	
 	Model.prototype.updateUsedData = function(){
 		this.addTools("usedData","usedRow",1);
 	};
+	
+	Model.prototype.updateGameData = function(){
+		this.addGames("gameData","gameRow",1);
+	};
+	
 	
 	Model.prototype.addEventListner = function(){
 		//window.document.addEventListener("pause", this.OnPause);
@@ -73,6 +97,14 @@ define(function(require){
 		var arr = event.currentTarget.id.split('_');
 		var actionId = arr[1].substring(6);
 		this.DoAction(actionId);
+	};
+	
+	Model.prototype.OnClickGame = function(event){
+		var arr = event.currentTarget.id.split('_');
+		var actionId = arr[1].substring(6);
+		var row = this.comp("gameData").find(["fID"], actionId);
+		justep.Shell.showPage("games/gameIndex.w?path=" +row[0].val("fSrcPath"));
+
 	};
 	
 	Model.prototype.DoAction = function(actionId){
@@ -185,6 +217,12 @@ define(function(require){
 		}
 		this.updateUsedData();
 		this.saveDataStore();
+	};
+	
+
+	Model.prototype.searchbtnClick = function(event){
+		justep.Shell.showPage("search");
+
 	};
 	
 

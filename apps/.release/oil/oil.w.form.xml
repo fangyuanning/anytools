@@ -2,7 +2,7 @@
 
 <div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cbqEvEz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbqEvEz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cbqEvEz" class="cbqEvEz"></div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cbqEvEz" class="cbqEvEz"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcZR3m6n-iosstatusbar cbqEvEz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbqEvEz"> 
     <div class="x-panel-top cbqEvEz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbqEvEz"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbqEvEz" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cbqEvEz"> 
@@ -18,7 +18,9 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cbqEvEz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbqEvEz"/>  
+    <div class="x-panel-content cbqEvEz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbqEvEz">
+      <iframe src="$model/UI2/anytools/games/Justdo/Index.html" xid="iframe1" width="100%" height="100%" __cid="cbqEvEz" class="cbqEvEz"/>
+    </div>  
     <style __cid="cbqEvEz" class="cbqEvEz">.x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZR3m6n-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div> 
 </div>

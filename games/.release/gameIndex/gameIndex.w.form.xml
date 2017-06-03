@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cBb26je" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBb26je" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cBb26je" class="cBb26je"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceQVr2m-iosstatusbar cBb26je" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBb26je"> 
+    <div class="x-panel-top cBb26je" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:0}" __cid="cBb26je"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" xid="titleBar1" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cBb26je" class="cBb26je"> 
+        <div class="x-titlebar-left cBb26je" xid="left2" __cid="cBb26je"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cBb26je" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cBb26je"> 
+            <i class="icon-chevron-left cBb26je" xid="i2" __cid="cBb26je"/>  
+            <span xid="span2" __cid="cBb26je" class="cBb26je"/>
+          </a> 
+        </div> 
+      </div> 
+    </div>
+    <div class="x-panel-content cBb26je" xid="content1" style="height:100%;width:100%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBb26je">
+      <iframe xid="gameframe" height="90%" width="100%" __cid="cBb26je" class="cBb26je"/> 
+    </div>  
+    <style __cid="cBb26je" class="cBb26je">.x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-top {height: 20px;}.iosstatusbar .x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-content { top: 20px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQVr2m-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

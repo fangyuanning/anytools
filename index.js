@@ -16,6 +16,9 @@ define(function(require) {
 				"main" : {
 					url : require.toUrl('./main.w')
 				},
+				"search" : {
+					url : require.toUrl('./search.w')
+				},
 				"lighting" : {
 					url : require.toUrl('./apps/lighting.w')
 				},
@@ -54,6 +57,9 @@ define(function(require) {
 				},
 				"audiocallphone" : {
 					url : require.toUrl('./apps/audioCallPhone.w')
+				},
+				"gameIndex" : {
+					url : require.toUrl('./games/gameIndex.w')
 				}
 				
 			}

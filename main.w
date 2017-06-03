@@ -15,7 +15,13 @@
   <data xid="default2">[{&quot;fID&quot;:&quot;1&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;calc&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;calc&quot;},{&quot;fID&quot;:&quot;2&quot;,&quot;fImageUrl&quot;:&quot;f1.png&quot;,&quot;fName&quot;:&quot;lighting&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;3&quot;,&quot;fImageUrl&quot;:&quot;f10.png&quot;,&quot;fName&quot;:&quot;prize&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;4&quot;,&quot;fImageUrl&quot;:&quot;f2.png&quot;,&quot;fName&quot;:&quot;browseDir&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;5&quot;,&quot;fImageUrl&quot;:&quot;g10.png&quot;,&quot;fName&quot;:&quot;clockNotify&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;6&quot;,&quot;fImageUrl&quot;:&quot;g10.png&quot;,&quot;fName&quot;:&quot;gps&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:1,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;7&quot;,&quot;fImageUrl&quot;:&quot;n16.png&quot;,&quot;fName&quot;:&quot;notepad&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;8&quot;,&quot;fImageUrl&quot;:&quot;q8.png&quot;,&quot;fName&quot;:&quot;oil&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;9&quot;,&quot;fImageUrl&quot;:&quot;n17.png&quot;,&quot;fName&quot;:&quot;recordAudio&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;10&quot;,&quot;fImageUrl&quot;:&quot;f9.png&quot;,&quot;fName&quot;:&quot;recordVideo&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;false&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;11&quot;,&quot;fImageUrl&quot;:&quot;n16.png&quot;,&quot;fName&quot;:&quot;hourseCalc&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;false&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;12&quot;,&quot;fImageUrl&quot;:&quot;n16.png&quot;,&quot;fName&quot;:&quot;scan&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;true&quot;,&quot;fClassName&quot;:&quot;other&quot;},{&quot;fID&quot;:&quot;13&quot;,&quot;fImageUrl&quot;:&quot;n16.png&quot;,&quot;fName&quot;:&quot;audiocallphone&quot;,&quot;fShow&quot;:&quot;true&quot;,&quot;support&quot;:3,&quot;addcommon&quot;:&quot;false&quot;,&quot;fClassName&quot;:&quot;other&quot;}]</data></div>
   <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="classData" idColumn="fClassName"><column label="大类" name="fClassName" type="String" xid="xid8"></column>
   <column isCalculate="true" label="是否显示" name="fCheckBox" type="Boolean" xid="xid9"></column>
-  <data xid="default3">[{&quot;fClassName&quot;:&quot;calc&quot;,&quot;fCheckBox&quot;:&quot;false&quot;},{&quot;fClassName&quot;:&quot;other&quot;,&quot;fCheckBox&quot;:&quot;true&quot;}]</data></div></div>
+  <data xid="default3">[{&quot;fClassName&quot;:&quot;calc&quot;,&quot;fCheckBox&quot;:&quot;false&quot;},{&quot;fClassName&quot;:&quot;other&quot;,&quot;fCheckBox&quot;:&quot;true&quot;}]</data></div>
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="gameData" idColumn="fID">
+   <column label="游戏ID" name="fID" type="String" xid="column6"></column>
+  <column label="游戏路径" name="fSrcPath" type="String" xid="column7"></column>
+  <column label="图标路径" name="fImageUrl" type="String" xid="column8"></column>
+  <column label="游戏名字" name="fName" type="String" xid="xid10"></column>
+  <data xid="default4">[{&quot;fID&quot;:&quot;1&quot;,&quot;fSrcPath&quot;:&quot;games/Justdo/Index.html&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;Justdo&quot;},{&quot;fID&quot;:&quot;2&quot;,&quot;fSrcPath&quot;:&quot;games/Justdo/Index.html&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;test&quot;},{&quot;fID&quot;:&quot;3&quot;,&quot;fSrcPath&quot;:&quot;games/Justdo/Index.html&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;game&quot;},{&quot;fID&quot;:&quot;4&quot;,&quot;fSrcPath&quot;:&quot;games/Justdo/Index.html&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;gogo&quot;},{&quot;fID&quot;:&quot;5&quot;,&quot;fSrcPath&quot;:&quot;games/Justdo/Index.html&quot;,&quot;fImageUrl&quot;:&quot;g8.png&quot;,&quot;fName&quot;:&quot;soga&quot;}]</data></div></div>
   <div component="$UI/system/components/justep/panel/panel" class="x-panel x-card x-full" xid="panel1">
    <div class="x-panel-top" xid="top1" visible="true">
     <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
@@ -24,7 +30,9 @@
    <span xid="span1"></span></a></div>
      <div class="x-titlebar-title" xid="title1">
   <span xid="span2" bind-text='window.localize.getLocalize("anytools")'></span></div>
-     <div class="x-titlebar-right reverse" xid="right1"></div></div> </div> 
+     <div class="x-titlebar-right reverse" xid="right1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="button" xid="searchbtn" onClick="searchbtnClick">
+   <i xid="i3" class="linear linear-magnifier"></i>
+   <span xid="span5"></span></a></div></div> </div> 
    <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel">
    <div class="x-panel-content  x-scroll-view" xid="content2" _xid="C7711AEBD9600001A9F1DB6B1E203EB0" style=" bottom: 0px;">
     <div component="$UI/system/components/justep/contents/contents" class="x-contents x-full" active="0" xid="contents" slidable="true" swipe="true" onActiveChange="contentsActiveChange">
@@ -57,16 +65,11 @@
    <span xid="span3" bind-text=' $model.getAddCommonBtnName(val("addcommon"))'></span></a></div>
   </div></li></ul> </div>
   </li></ul> </div></div></div> 
-     <div class="x-contents-content x-content-on-left x-content-on-remoting-sibling" xid="enjoyContent">
-      <div component="$UI/system/components/bootstrap/carousel/carousel" class="x-carousel carousel" xid="carousel1" style="height:288px;" interval="4" auto="true">
-       <ol class="carousel-indicators" xid="ol1" style="margin-bottom:20px;"></ol>
-       <div role="listbox" component="$UI/system/components/justep/contents/contents" active="0" slidable="true" wrap="true" swipe="true" routable="false" xid="contents1" class="x-contents carousel-inner" style="height:100%;">
-        <div class="x-contents-content" xid="page1" style="height:100%;background-color:#009fde;">
-         <div style="height:100%;background-repeat:no-repeat;background-position:center;background-image:url(./images/1.png);" xid="div4"></div></div> 
-        <div class="x-contents-content" xid="page2" style="height:100%;background: -webkit-linear-gradient(top, #62B326, #52AC26);">
-         <div style="height:100%;background-repeat:no-repeat;background-position:center;background-image:url(./images/2.png);" xid="div5"></div></div> 
-        <div class="x-contents-content" xid="page3" style="height:100%;background: -webkit-linear-gradient(top, #2F75C8, #281C9A);">
-         <div style="height:100%;background-repeat:no-repeat;background-position:center;background-image:url(./images/3.png);" xid="div6"></div></div> </div> </div> </div> 
+     <div class="x-contents-content x-scroll-view " xid="enjoyContent">
+      
+  
+  <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView2">
+   <div component="$UI/system/components/bootstrap/row/row" class="row grid" xid="gameRow"></div></div></div> 
      <div class="x-contents-content x-cards" xid="ownContent" onActive="ownContentActive"></div>
      </div> 
   </div></div></div>

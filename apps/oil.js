@@ -7,7 +7,7 @@ define(function(require){
 	};
 
 	Model.prototype.modelLoad = function(event){
-		this.comp("gpslist").newData({defaultValues:[]});
+		
 	};
 
 	return Model;

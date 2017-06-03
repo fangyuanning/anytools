@@ -75,7 +75,7 @@ define(function(require){
 
 	Model.prototype.modelModelConstruct = function(event){
 		var setting = JSON.parse(localStorage.getItem(this.STORE_SETTING));
-		if(setting != null && setting.hasOwnProperty("autoOpen")){
+		if(setting !== null && setting.hasOwnProperty("autoOpen")){
 			this.autoLoad = setting.autoOpen;
 		}else{
 			this.autoLoad = false;
