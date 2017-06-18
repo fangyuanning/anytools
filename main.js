@@ -107,6 +107,10 @@ define(function(require){
 
 	};
 	
+	Model.prototype.DoGameAction = function(srcpath){
+		justep.Shell.showPage("games/gameIndex.w?path=" + srcpath);
+	};
+	
 	Model.prototype.DoAction = function(actionId){
 		var actionFun = new Array();
 		actionFun[1] = "calc";
@@ -122,6 +126,8 @@ define(function(require){
 		actionFun[11] = "hourseCalc";
 		actionFun[12] = "scan";
 		actionFun[13] = "audiocallphone";
+		actionFun[14] = "pdfviewer";
+		actionFun[15] = "webview";
 
 		justep.Shell.showPage(actionFun[actionId]);
 	};
@@ -223,6 +229,14 @@ define(function(require){
 	Model.prototype.searchbtnClick = function(event){
 		justep.Shell.showPage("search");
 
+	};
+	
+	Model.prototype.searchAppAndGame = function(key,type){
+		if( type == "app"){
+		
+		}else{
+		
+		}
 	};
 	
 

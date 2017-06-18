@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cEviUR3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEviUR3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cEviUR3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEviUR3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cEviUR3" class="cEviUR3"></div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cEviUR3" class="cEviUR3"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEFnQbq-iosstatusbar cEviUR3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEviUR3"> 
     <div class="x-panel-top cEviUR3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEviUR3"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEviUR3" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cEviUR3"> 
@@ -18,7 +18,65 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cEviUR3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEviUR3"/>  
+    <div class="x-panel-content cEviUR3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEviUR3">
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cEviUR3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cEviUR3"> 
+        <ul class="x-list-template hide cEviUR3" xid="listTemplateUl1" __cid="cEviUR3"> 
+          <li xid="li1" __cid="cEviUR3" class="cEviUR3">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cEviUR3" xid="approw" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEviUR3"> 
+              <div class="x-col cEviUR3" xid="col1" __cid="cEviUR3">
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cEviUR3" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cEviUR3"> 
+                  <label class="x-label cEviUR3" xid="label1" bind-text="window.localize.getLocalize(&quot;searchapplb&quot;)" __cid="cEviUR3"/>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cEviUR3" xid="appinput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cEviUR3"/>
+                </div>
+              </div>  
+              <div class="x-col x-col-fixed cEviUR3" xid="col2" style="width:auto;" __cid="cEviUR3">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cEviUR3" xid="searchAppBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:searchAppBtnClick" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cEviUR3"> 
+                  <i xid="i1" __cid="cEviUR3" class="cEviUR3"/>  
+                  <span xid="span2" bind-text="window.localize.getLocalize(&quot;search&quot;)" __cid="cEviUR3" class="cEviUR3"/>
+                </a>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cEviUR3" xid="gamerow" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEviUR3"> 
+              <div class="x-col cEviUR3" xid="col5" __cid="cEviUR3"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cEviUR3" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cEviUR3"> 
+                  <label class="x-label cEviUR3" xid="label2" bind-text="window.localize.getLocalize(&quot;searchgamelb&quot;)" __cid="cEviUR3"/>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cEviUR3" xid="gameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cEviUR3"/>
+                </div> 
+              </div>  
+              <div class="x-col x-col-fixed cEviUR3" xid="col4" style="width:auto;" __cid="cEviUR3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cEviUR3" xid="searchGameBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:searchGameBtnClick" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cEviUR3"> 
+                  <i xid="i2" __cid="cEviUR3" class="cEviUR3"/>  
+                  <span xid="span3" bind-text="window.localize.getLocalize(&quot;search&quot;)" __cid="cEviUR3" class="cEviUR3"/>
+                </a> 
+              </div> 
+            </div>
+          </li>
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cEviUR3" xid="resultList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;searchData&quot;}" __cid="cEviUR3"> 
+        <ul class="x-list-template hide cEviUR3" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_resultList($element),afterRender:$model.foreach_afterRender_resultList.bind($model,$element)}" __cid="cEviUR3"> 
+          <li xid="li2" __cid="cEviUR3" class="cEviUR3">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cEviUR3" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEviUR3"> 
+              <div class="x-col x-col-center cEviUR3" xid="mediacol" bind-click="mediacolClick" __cid="cEviUR3"> 
+                <div class="media cEviUR3" xid="appname" __cid="cEviUR3"> 
+                  <div class="media-left cEviUR3" xid="mediaLeft1" __cid="cEviUR3"> 
+                    <a href="#" xid="a1" __cid="cEviUR3" class="cEviUR3"> 
+                      <img class="media-object cEviUR3" src="" alt="" xid="image1" bind-attr-src=" $model.getAppIconPath(val(&quot;fImageUrl&quot;)) " height="40px" style="width:40px;" __cid="cEviUR3"/>
+                    </a> 
+                  </div>  
+                  <div class="media-body cEviUR3" xid="mediaBody1" style="vertical-align:middle;" __cid="cEviUR3"> 
+                    <h4 class="media-heading cEviUR3" xid="h41" style="width:100%;vertical-align:middle;" bind-text="window.localize.getLocalize( val(&quot;fName&quot;))" __cid="cEviUR3">Media heading</h4>
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col x-col-center cEviUR3" xid="mediadetail" __cid="cEviUR3"> 
+                <span xid="appdesciption" bind-text="window.localize.getLocalize( &quot;appdesc_&quot;+ val(&quot;fName&quot;))" __cid="cEviUR3" class="cEviUR3"/>
+              </div> 
+            </div>
+          </li>
+        </ul> 
+      </div>
+    </div>  
     <style __cid="cEviUR3" class="cEviUR3">.x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEFnQbq-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div> 
 </div>

@@ -26,9 +26,10 @@
   "hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
   "scan":{"zh_CN":"扫一扫","en":"Scan"},
   "audiocallphone":{"zh_CN":"语音拨号","en":"Scan"},
+  "pdfviewer":{"zh_CN":"PDF阅读器","en":"Pdf view"},
+  "webview":{"zh_CN":"浏览器","en":"web browse"},
   
-  
-   "appdesc_lighting":{"zh_CN":"手电筒","en":"Lighting"},
+  "appdesc_lighting":{"zh_CN":"手电筒","en":"Lighting"},
   "appdesc_prize":{"zh_CN":"抽奖","en":"Prize"},
   "appdesc_calc":{"zh_CN":"计算器","en":"Calc"},
   "appdesc_browseDir":{"zh_CN":"目录浏览","en":"browseDir"},
@@ -41,12 +42,25 @@
   "appdesc_hourseCalc":{"zh_CN":"房贷计算","en":"hourseCalc"},
   "appdesc_scan":{"zh_CN":"扫一扫","en":"Scan"},
   "appdesc_audiocallphone":{"zh_CN":"语音拨号","en":"Scan"},
+  "appdesc_pdfviewer":{"zh_CN":"PDF阅读器","en":"Pdf view"},
+  "appdesc_webview":{"zh_CN":"浏览器","en":"web browse"},
   
   "classname_other":{"zh_CN":"其他工具","en":"Other Tools"},
   "classname_calc":{"zh_CN":"计算类工具","en":"Calc Tools"},
   
   "deletetocomon_succ":{"zh_CN":"删除成功!","en":"Calc Tools"},
   "addtocomon_succ":{"zh_CN":"添加成功!","en":"Calc Tools"},
+  
+  "search":{"zh_CN":"搜索","en":"Search"},
+  "searchapplb":{"zh_CN":"搜索应用:","en":"Application:"},
+  "searchgamelb":{"zh_CN":"搜索游戏:","en":"Games:"},
+  
+  "wuziqi":{"zh_CN":"五子棋","en":"wuziqi"},
+  "Justdo":{"zh_CN":"消消乐","en":"fadeout"},
+  "flapp":{"zh_CN":"笨鸟","en":"Flappy Bird"},
+  "MonstrCandy":{"zh_CN":"魔鬼糖果","en":"MonstrCandy"},
+  "AnimailChest":{"zh_CN":"动物棋盘","en":"AnimailChest"},
+  
   
   
   "anytools":{"zh_CN":"万能工具","en":"AnyTools"}

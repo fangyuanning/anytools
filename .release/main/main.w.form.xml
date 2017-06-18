@@ -111,7 +111,8 @@
           <span xid="span9" bind-text="window.localize.getLocalize(&quot;mine&quot;)" __cid="cB7FBJn" class="cB7FBJn">我的</span>
         </a> 
       </div>
-    </div>
+    </div>  
+    <div id="ContextMainId" __cid="cB7FBJn" class="cB7FBJn"/>
     <style __cid="cB7FBJn" class="cB7FBJn">.x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMjI3Yz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div>
 </div>

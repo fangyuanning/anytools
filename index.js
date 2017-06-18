@@ -58,8 +58,15 @@ define(function(require) {
 				"audiocallphone" : {
 					url : require.toUrl('./apps/audioCallPhone.w')
 				},
+				"pdfviewer" : {
+					url : require.toUrl('./apps/pdfviewer.w')
+				},
+				"webview" : {
+					url : require.toUrl('./apps/webView.w')
+				},
 				"gameIndex" : {
 					url : require.toUrl('./games/gameIndex.w')
+					
 				}
 				
 			}

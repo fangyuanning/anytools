@@ -18,12 +18,7 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cZVRBBn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVRBBn">
-      <div class="progress cZVRBBn" component="$model/UI2/system/components/bootstrap/progress/progress" xid="signal" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuenow&quot;:10}" __cid="cZVRBBn"> 
-        <div class="progress-bar progress-bar-success cZVRBBn" role="progressbar" xid="progressBar1" __cid="cZVRBBn"> 
-          <span xid="span1" __cid="cZVRBBn" class="cZVRBBn">0%</span>
-        </div> 
-      </div>  
+    <div class="x-panel-content cZVRBBn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVRBBn"> 
       <div component="$model/UI2/system/components/justep/list/list" class="x-list cZVRBBn" xid="list3" style="height:40px;table-layout:fixed;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cZVRBBn"> 
         <ul class="x-list-template hide cZVRBBn" xid="listTemplateUl3" style="border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
           <li xid="li3" style="height:40px;" __cid="cZVRBBn" class="cZVRBBn"> 
@@ -33,6 +28,11 @@
               </div>  
               <div class="x-col x-col-fixed cZVRBBn" xid="col11" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
                 <span xid="span4" __cid="cZVRBBn" class="cZVRBBn">信号强度</span>
+                <div class="progress cZVRBBn" component="$model/UI2/system/components/bootstrap/progress/progress" xid="signal" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;textVisible&quot;:false,&quot;valuenow&quot;:40}" __cid="cZVRBBn"> 
+                  <div class="progress-bar progress-bar-success cZVRBBn" role="progressbar" xid="progressBar1" __cid="cZVRBBn"> 
+                    <span xid="span1" __cid="cZVRBBn" class="cZVRBBn">0%</span>
+                  </div> 
+                </div>
               </div>  
               <div class="x-col x-col-fixed cZVRBBn" xid="col12" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
                 <span xid="span5" style="vertical-align:middle;" __cid="cZVRBBn" class="cZVRBBn">可用</span>
@@ -42,6 +42,35 @@
               </div>  
               <div class="x-col x-col-fixed cZVRBBn" xid="col14" style="width:40px;text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cZVRBBn"> 
                 <span xid="span7" __cid="cZVRBBn" class="cZVRBBn">角度</span>
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cZVRBBn" xid="gpslist" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;gpsstatus&quot;}" __cid="cZVRBBn"> 
+        <ul class="x-list-template hide cZVRBBn" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_gpslist($element),afterRender:$model.foreach_afterRender_gpslist.bind($model,$element)}" __cid="cZVRBBn"> 
+          <li xid="li1" __cid="cZVRBBn" class="cZVRBBn"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cZVRBBn" xid="row1" style="background-color:#727272;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZVRBBn"> 
+              <div class="x-col x-col-fixed cZVRBBn" xid="col1" style="width:60px;" __cid="cZVRBBn"> 
+                <span xid="prn" bind-text="val(&quot;prn&quot;)" __cid="cZVRBBn" class="cZVRBBn"/>  
+                <img src="" alt="" xid="country" __cid="cZVRBBn" class="cZVRBBn"/>
+              </div>  
+              <div class="x-col x-col-center cZVRBBn" xid="col2" style="height:30px;" __cid="cZVRBBn"> 
+                <div class="progress cZVRBBn" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress1" bind-attr-valuenow="val('snr')" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;textVisible&quot;:false,&quot;valuenow&quot;:40}" __cid="cZVRBBn"> 
+                  <div class="progress-bar progress-bar-success cZVRBBn" role="progressbar" xid="progressBar2" bind-css="{'progress-bar-danger':val('snr')&lt;30}" bind-style="{width:val('snr')+'%'}" __cid="cZVRBBn"> 
+                    <span xid="span2" __cid="cZVRBBn" class="cZVRBBn">0%</span>
+                  </div> 
+                </div>  
+                <span xid="snrvalue" bind-text="val(&quot;snr&quot;)" class="pull-right cZVRBBn" __cid="cZVRBBn"/>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col3" style="width:60px;" __cid="cZVRBBn"> 
+                <span xid="activedgps" __cid="cZVRBBn" class="cZVRBBn">ok</span>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col4" style="width:60px;" __cid="cZVRBBn"> 
+                <span xid="azimuth" bind-text="val(&quot;azimuth&quot;)" __cid="cZVRBBn" class="cZVRBBn">1</span>
+              </div>  
+              <div class="x-col x-col-fixed cZVRBBn" xid="col9" style="width:60px;" __cid="cZVRBBn"> 
+                <span xid="elevation" bind-text="val(&quot;elevation&quot;)" __cid="cZVRBBn" class="cZVRBBn"/>
               </div> 
             </div> 
           </li> 
