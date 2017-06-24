@@ -4,15 +4,7 @@
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-wing-left.cnyyMZf &gt; .x-titlebar.cnyyMZf{background-color: orange}</xhtml:style>  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cnyyMZf" class="cnyyMZf"/>  
   <div component="$model/UI2/system/components/justep/wing/wing" class="x-wing cnyyMZf" xid="wing" data-bind="component:{name:'$model/UI2/system/components/justep/wing/wing'}" data-config="{&quot;display&quot;:&quot;push&quot;}" __cid="cnyyMZf"> 
-    <div class="x-wing-left cnyyMZf" xid="left" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cnyyMZf"> 
-      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cnyyMZf" xid="titleBar1" style="width:100%;" bind-text="window.localize.getLocalize('shop')" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;设置&quot;}" __cid="cnyyMZf"> 
-        <div class="x-titlebar-left cnyyMZf" xid="div2" __cid="cnyyMZf"/>  
-        <div class="x-titlebar-title cnyyMZf" xid="div3" __cid="cnyyMZf">设置</div>  
-        <div class="x-titlebar-right  cnyyMZf" xid="div4" __cid="cnyyMZf">
-          <div class="empty cnyyMZf" __cid="cnyyMZf"/>
-        </div> 
-      </div> 
-    </div>  
+    <div class="x-wing-left cnyyMZf" xid="left" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cnyyMZf"></div>  
     <div class="x-wing-content cnyyMZf" xid="content1" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cnyyMZf"> 
       <div class="x-wing-backdrop cnyyMZf" xid="div1" __cid="cnyyMZf"/>  
       <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cnyyMZf" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;wrap&quot;:false}" __cid="cnyyMZf">

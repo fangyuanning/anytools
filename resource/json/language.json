@@ -12,6 +12,7 @@
   "clear":{"zh_CN":"清除","en":"clear"},
   "clearall":{"zh_CN":"全部清除","en":"clear all"},
   "add":{"zh_CN":"添加","en":"Add"},
+  "useorgindata":{"zh_CN":"使用原始数据:","en":"Use Origin Data:"},
   
   "lighting":{"zh_CN":"手电筒","en":"Lighting"},
   "prize":{"zh_CN":"抽奖","en":"Prize"},
@@ -60,6 +61,17 @@
   "flapp":{"zh_CN":"笨鸟","en":"Flappy Bird"},
   "MonstrCandy":{"zh_CN":"魔鬼糖果","en":"MonstrCandy"},
   "AnimailChest":{"zh_CN":"动物棋盘","en":"AnimailChest"},
+  "Ninja":{"zh_CN":"切水果","en":"AnimailChest"},
+  
+  "self_info":{"zh_CN":"个人信息","en":"private info"},
+  "base_self_info":{"zh_CN":"个人基础信息","en":"private info"},
+  "base_self_accountinfo":{"zh_CN":"个人账户信息","en":"private account info"},
+  "setup":{"zh_CN":"设置","en":"setup"},
+  "setup_game":{"zh_CN":"游戏设置","en":"game setup"},
+  "setup_app":{"zh_CN":"应用设置","en":"app setup"},
+  "contribute":{"zh_CN":"个人贡献","en":"contribution"},
+  "uploaded_game":{"zh_CN":"上传游戏","en":"upload game"},
+  "uploaded_apps":{"zh_CN":"上传应用","en":"upload app"},
   
   
   

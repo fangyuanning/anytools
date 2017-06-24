@@ -1,13 +1,13 @@
 
-<!doctype html><html><head><title>HTML5³¬¼¶ÂêÀö</title><link rel="shortcut icon" href=favicon.png /><link rel=stylesheet type="text/css" href="VNkyVaVxUV.css"><script type="text/javascript" src="jquery.js"></script>
+<!doctype html><html><head><title>HTML5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</title><link rel="shortcut icon" href=favicon.png /><link rel=stylesheet type="text/css" href="VNkyVaVxUV.css"><script type="text/javascript" src="jquery.js"></script>
 
 </head>
 <body>
-<h4>·½Ïò¼ü£ºÒÆ¶¯  &nbsp;&nbsp;S¼ü£ºÌøÔ¾/½øÈë&nbsp;&nbsp;A¼ü£º¿ìÅÜ/Éä»÷</h4>
+<h4>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½  &nbsp;&nbsp;Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾/ï¿½ï¿½ï¿½ï¿½&nbsp;&nbsp;Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½</h4>
 <div class=spacing></div>
 <div class=main>
-<canvas id=canvas width=640 height=480>
-<p style="text-align: center;">Ôã¸â£¡ÄúµÄä¯ÀÀÆ÷²»Ö§³ÖHTML5 Canvas£¬Íæ²»ÁË£¬Çë³¢ÊÔÓÃFirefox¡¢Chrome¡¢IE9ä¯ÀÀÆ÷</p>
+<canvas id=canvas width=100% height=100%>
+<p style="text-align: center;">ï¿½ï¿½â£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½HTML5 Canvasï¿½ï¿½ï¿½æ²»ï¿½Ë£ï¿½ï¿½ë³¢ï¿½ï¿½ï¿½ï¿½Firefoxï¿½ï¿½Chromeï¿½ï¿½IE9ï¿½ï¿½ï¿½ï¿½ï¿½</p>
 </canvas>
 <div class=spacing></div>
 </div>
@@ -20,7 +20,7 @@
 <script src="/follow.js" type="text/javascript"></script>
 </div>
  
-<div style="width:700px;margin:10px auto 20px auto;padding:0 0 0 250px;overflow:hidden">
+<div style="width:700px;margin:0 0 0 0;padding:0 0 0 0;overflow:hidden">
 <!-- Baidu Button BEGIN -->
     <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" style="margin:10px 0 0 -4px">
         <a class="bds_tsina"></a>
@@ -29,7 +29,7 @@
         <a class="bds_qzone"></a>
         <a class="bds_douban"></a>
         <a class="bds_xg"></a>
-        <span class="bds_more">¸ü¶à</span>
+        <span class="bds_more">ï¿½ï¿½ï¿½ï¿½</span>
 		<a class="shareCount"></a>
     </div>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
@@ -39,6 +39,27 @@
 ();
 </script>
 <!-- Baidu Button END -->
+<script>
+	// è·å–çª—å£å®½åº¦
+	if (window.innerWidth)
+	winWidth = window.innerWidth;
+//	else if ((document.body) && (document.body.clientWidth))
+//	winWidth = document.body.clientWidth;
+	// è·å–çª—å£é«˜åº¦
+	if (window.innerHeight)
+	winHeight = window.innerHeight;
+	else if ((document.body) && (document.body.clientHeight))
+	winHeight = document.body.clientHeight;
+	// é€šè¿‡æ·±å…¥ Document å†…éƒ¨å¯¹ body è¿›è¡Œæ£€æµ‹ï¼Œè·å–çª—å£å¤§å°
+	if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+	{
+		winHeight = document.documentElement.clientHeight;
+		winWidth = document.documentElement.clientWidth;
+	}
+	var c = document.getElementById("canvas");
+	c.width = winHeight;
+	c.height = winHeight;
+</script>
 </div>
 </body>
 </html>

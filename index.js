@@ -16,6 +16,9 @@ define(function(require) {
 				"main" : {
 					url : require.toUrl('./main.w')
 				},
+				"left":{
+					url : require.toUrl('./menu/left2.w')
+				},
 				"search" : {
 					url : require.toUrl('./search.w')
 				},
@@ -104,8 +107,8 @@ define(function(require) {
 	
 
 	Model.prototype.modelLoad = function(event) {
-	
 		justep.Shell.showPage("main");
+		justep.Shell.loadPage("left");
 	};
 
 

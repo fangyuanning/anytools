@@ -12,7 +12,10 @@ define(function(require){
 
 	Model.prototype.modelParamsReceive = function(event){
 		var path = this.getContext().getRequestParameter("path");
-		this.getElementByXid("gameframe").src = path;
+		if(path && path.length>0)
+			this.getElementByXid("gameframe").src = path;
+		else
+			alert("not corret url path!");
 	};
 
 	return Model;

@@ -164,6 +164,9 @@ define(function(require){
 	};
 	
 	Model.prototype.loadDataStore = function(){
+		var setting = window.anysetting ||{};
+		if( setting && setting.useOriginData)
+			return;
 		try{
 			var appdata = JSON.parse(localStorage.getItem(this.STORE_APPCLASSDATA));
 			var commondata = JSON.parse(localStorage.getItem(this.STORE_COMMONCLASSDATA));
