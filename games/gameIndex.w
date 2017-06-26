@@ -10,7 +10,7 @@
      <a component="$UI/system/components/justep/button/button" label="" class="btn btn-link btn-only-icon" icon="icon-chevron-left" onClick="{operation:'window.close'}" xid="backBtn">
       <i class="icon-chevron-left" xid="i2"></i>
       <span xid="span2"></span></a> </div> 
-    </div> </div><div class="x-panel-content" xid="content1" style="height:100%;width:100%;"><iframe xid="gameframe" height="90%" width="100%"></iframe>
+    </div> </div><div class="x-panel-content" xid="content1" style="height:100%;width:100%;"><iframe xid="gameframe" height="100%" width="100%"></iframe>
   </div>
   </div> 
 </div>

@@ -7,15 +7,17 @@ define(function(require){
 	};
 
 	Model.prototype.useOrginDataToggleChange = function(event){
-		var setting = window.anysetting||{};
-		setting.useOriginData = this.comp("useOrginDataToggle").value;
+		window.anysetting.useOriginData = this.comp("useOrginDataToggle").value;
+		this.onSettinChange();
 	};
 
 	Model.prototype.modelLoad = function(event){
-		var setting = window.anysetting||{};
-		if( setting && setting.useOriginData)
-			this.comp("useOrginDataToggle").value = setting.useOriginData;
+		if( window.anysetting && window.anysetting.useOriginData)
+			this.comp("useOrginDataToggle").set({checked:window.anysetting.useOriginData});
 	};
-
+	
+	Model.prototype.onSettinChange = function(){
+		window.globalmodel.index.saveSetting();
+	};
 	return Model;
 });

@@ -7,7 +7,7 @@ define(function(require) {
 	
 	var Model = function() {
 		this.callParent();
-		
+		this.STORE_SETTING = "AnyTools_SETTING";
 		this.localizeInit();
 		this.shellImpl = new ShellImpl(this, {
 			contentsXid : "pages",
@@ -107,8 +107,28 @@ define(function(require) {
 	
 
 	Model.prototype.modelLoad = function(event) {
+		this.loadSetting();
+		this.setGlobal();
 		justep.Shell.showPage("main");
 		justep.Shell.loadPage("left");
+	};
+	
+	Model.prototype.setGlobal = function() {
+		window.globalmodel = {};
+		window.globalmodel.index = this;
+	};
+	
+	Model.prototype.loadSetting = function() {
+		var str = localStorage.getItem(this.STORE_SETTING);
+		window.anysetting = JSON.parse(str)||{};
+	};
+	
+	Model.prototype.saveSetting = function() {
+		localStorage.setItem(this.STORE_SETTING, JSON.stringify(window.anysetting));
+	};
+	
+	Model.prototype.modelUnLoad = function(event){
+		
 	};
 
 
