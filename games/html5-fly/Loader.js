@@ -144,6 +144,9 @@ function initCanvas()
       g_itemsLoaded = 0;
 
       g_onscreenControls = false;
+      
+      //g_canvas.setAttribute('width',700);
+      //g_canvas.setAttribute('height',800);
  
       return true;
 }

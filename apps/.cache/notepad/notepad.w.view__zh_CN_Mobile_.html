@@ -5,16 +5,24 @@
   <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onActive:modelActive;onunLoad:modelUnLoad;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cvyI3En" class="cvyI3En"/>  
   <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQZ73iy-iosstatusbar cvyI3En" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvyI3En"> 
     <div class="x-panel-top cvyI3En" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvyI3En"> 
-      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cvyI3En" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cvyI3En"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cvyI3En" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cvyI3En"> 
         <div class="x-titlebar-left cvyI3En" __cid="cvyI3En"> 
           <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cvyI3En" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cvyI3En"> 
             <i class="icon-chevron-left cvyI3En" __cid="cvyI3En"/>  
             <span __cid="cvyI3En" class="cvyI3En"/> 
           </a> 
         </div>  
-        <div class="x-titlebar-title cvyI3En" __cid="cvyI3En">标题</div>  
+        <div class="x-titlebar-title cvyI3En" __cid="cvyI3En" data-bind="text:window.localize.getLocalize(&quot;notepad&quot;)"/>  
         <div class="x-titlebar-right  cvyI3En" __cid="cvyI3En"> 
-          <div class="empty cvyI3En" __cid="cvyI3En"/> 
+          <div class="empty cvyI3En" __cid="cvyI3En"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cvyI3En" xid="addBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-bus&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cvyI3En"> 
+            <i class="linear linear-bus cvyI3En" xid="i2" __cid="cvyI3En"/>  
+            <span xid="span2" __cid="cvyI3En" class="cvyI3En"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cvyI3En" xid="okBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-bubble&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cvyI3En"> 
+            <i class="linear linear-bubble cvyI3En" xid="i1" __cid="cvyI3En"/>  
+            <span xid="span1" __cid="cvyI3En" class="cvyI3En"/> 
+          </a> 
         </div> 
       </div> 
     </div>  

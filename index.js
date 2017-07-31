@@ -32,7 +32,13 @@ define(function(require) {
 					url : require.toUrl('./apps/gps.w')
 				},
 				"notepad" : {
-					url : require.toUrl('./apps/notepad.w')
+					url : require.toUrl('./apps/notepad/notepad.w')
+				},
+				"notetype" : {
+					url : require.toUrl('./apps/notepad/notetype.w')
+				},
+				"notedit" : {
+					url : require.toUrl('./apps/notepad/notedit.w')
 				},
 				"oil" : {
 					url : require.toUrl('./apps/oil.w')
@@ -53,7 +59,7 @@ define(function(require) {
 					url : require.toUrl('./apps/hourseCalc.w')
 				},
 				"prize" : {
-					url : require.toUrl('./apps/prize.w')
+					url : require.toUrl('./apps/prize/prize.w')
 				},
 				"scan" : {
 					url : require.toUrl('./apps/scan.w')

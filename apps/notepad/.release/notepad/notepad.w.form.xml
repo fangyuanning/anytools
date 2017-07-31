@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cE3MNvu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cE3MNvu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onActive:modelActive;onunLoad:modelUnLoad;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cE3MNvu" class="cE3MNvu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbqiMna-iosstatusbar cE3MNvu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cE3MNvu"> 
+    <div class="x-panel-top cE3MNvu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cE3MNvu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cE3MNvu" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cE3MNvu"> 
+        <div class="x-titlebar-left cE3MNvu" __cid="cE3MNvu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cE3MNvu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cE3MNvu"> 
+            <i class="icon-chevron-left cE3MNvu" __cid="cE3MNvu"/>  
+            <span __cid="cE3MNvu" class="cE3MNvu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cE3MNvu" bind-text="window.localize.getLocalize(&quot;notepad&quot;)" __cid="cE3MNvu"/>  
+        <div class="x-titlebar-right  cE3MNvu" __cid="cE3MNvu">
+          <div class="empty cE3MNvu" __cid="cE3MNvu"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cE3MNvu" xid="addBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-bus&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cE3MNvu"> 
+            <i class="linear linear-bus cE3MNvu" xid="i2" __cid="cE3MNvu"/>  
+            <span xid="span2" __cid="cE3MNvu" class="cE3MNvu"/>
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cE3MNvu" xid="okBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-bubble&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cE3MNvu"> 
+            <i class="linear linear-bubble cE3MNvu" xid="i1" __cid="cE3MNvu"/>  
+            <span xid="span1" __cid="cE3MNvu" class="cE3MNvu"/>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cE3MNvu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cE3MNvu"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+        <div class="x-col x-col-center cE3MNvu" xid="col4" __cid="cE3MNvu">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label40 cE3MNvu" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cE3MNvu"> 
+            <label class="x-label cE3MNvu" xid="label1" __cid="cE3MNvu">请选择类别：</label>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cE3MNvu" xid="typeselect" bind-optionsValue="'classs'" bind-options="notetype.datas" bind-optionsText="'classs'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{name:'$model/UI2/system/components/justep/select/select',labelRef:$model.notetype.ref(&quot;classs&quot;)}" __cid="cE3MNvu"/>
+          </div>
+        </div>  
+        <div class="x-col x-col-fixed x-col-center cE3MNvu" xid="col5" style="width:auto;" __cid="cE3MNvu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cE3MNvu" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;修改类型&quot;}" __cid="cE3MNvu"> 
+            <i xid="i3" __cid="cE3MNvu" class="cE3MNvu"/>  
+            <span xid="span3" bind-text="window.localize.getLocalize(&quot;notepad_modtype&quot;)" __cid="cE3MNvu" class="cE3MNvu">修改类型</span>
+          </a>
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cE3MNvu" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;notedata&quot;,&quot;filter&quot;:&quot; $row.val(\&quot;content\&quot;)&quot;}" __cid="cE3MNvu"> 
+        <ul class="x-list-template hide cE3MNvu" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cE3MNvu"> 
+          <li xid="li1" __cid="cE3MNvu" class="cE3MNvu">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+              <div class="x-col cE3MNvu" xid="col1" __cid="cE3MNvu">
+                <span xid="span4" bind-text="val(&quot;title&quot;)" __cid="cE3MNvu" class="cE3MNvu"/>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+                  <div class="x-col x-col-center cE3MNvu" xid="col12" __cid="cE3MNvu">
+                    <span xid="span5" class="center-block cE3MNvu" style="text-align:center;font-size:xx-large;" bind-text="val(&quot;title&quot;)" __cid="cE3MNvu">essdofijsdofinihao</span>
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+                  <div class="x-col x-col-fixed cE3MNvu" xid="col15" style="overflow:hidden;height:60px;" __cid="cE3MNvu">
+                    <span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-text="val(&quot;content&quot;)" __cid="cE3MNvu" class="cE3MNvu">宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假</span>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+                  <div class="x-col cE3MNvu" xid="col16" __cid="cE3MNvu">
+                    <img src="$model/UI2/anytools/resource/face/801f91f21f54bfb449cc9c82840aa46e.gif" alt="" xid="image1" align="middle" height="60px" style="width:60px;" __cid="cE3MNvu" class="cE3MNvu"/>
+                  </div>  
+                  <div class="x-col cE3MNvu" xid="col17" __cid="cE3MNvu">
+                    <span xid="span8" __cid="cE3MNvu" class="cE3MNvu"/>
+                  </div>  
+                  <div class="x-col x-col-center cE3MNvu" xid="col18" __cid="cE3MNvu">
+                    <span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;" bind-text="val(&quot;date&quot;)" __cid="cE3MNvu" class="cE3MNvu">2017-7-30</span>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="line" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+                  <div class="x-col x-col-fixed x-col-center cE3MNvu" xid="col19" __cid="cE3MNvu">
+                    <img src="" alt="" xid="image2" __cid="cE3MNvu" class="cE3MNvu"/> 
+                  </div> 
+                </div>
+              </div> 
+            </div>
+          </li>
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="cE3MNvu" class="cE3MNvu">.x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbqiMna-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

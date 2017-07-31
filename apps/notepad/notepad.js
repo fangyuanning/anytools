@@ -7,8 +7,7 @@ define(function(require){
 	};
 
 	Model.prototype.modelActive = function(event){
-	alert(this.comp("checkbox1"));
-		window.open("http://www.baidu.com",'_system');
+
 	};
 
 	Model.prototype.modelInactive = function(event){
@@ -16,8 +15,7 @@ define(function(require){
 	};
 
 	Model.prototype.modelModelConstruct = function(event){
-//alert(this.comp("checkbox1"));
-window.open("http://www.baidu.com",'_system');
+
 	};
 
 	Model.prototype.modelModelConstructDone = function(event){
@@ -25,7 +23,7 @@ window.open("http://www.baidu.com",'_system');
 	};
 
 	Model.prototype.modelLoad = function(event){
-this.comp("checkbox1").set({"checked": true});
+//this.comp("checkbox1").set({"checked": true});
 	};
 
 	Model.prototype.modelParamsReceive = function(event){
@@ -38,6 +36,23 @@ this.comp("checkbox1").set({"checked": true});
 
 	Model.prototype.checkbox1Change = function(event){
 
+	};
+
+	Model.prototype.okBtnClick = function(event){
+
+	};
+
+	Model.prototype.addBtnClick = function(event){
+		justep.Shell.showPage("notedit");
+	};
+
+	Model.prototype.button1Click = function(event){
+		justep.Shell.showPage("notetype");
+	};
+	
+	Model.prototype.getFaceUrl = function(event){
+		//justep.Shell.showPage("notetype");
+		return "";
 	};
 
 	return Model;
