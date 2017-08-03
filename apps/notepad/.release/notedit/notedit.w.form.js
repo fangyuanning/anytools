@@ -1,9 +1,11 @@
 define(function(require){
 require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/contents/content');
 require('$model/UI2/system/components/justep/loadingBar/loadingBar');
 require('$model/UI2/system/components/justep/button/button');
 require('$model/UI2/system/components/justep/titleBar/titleBar');
 require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/contents/contents');
 require('$model/UI2/system/components/justep/window/window');
 require('$model/UI2/system/components/justep/panel/panel');
 var __parent1=require('$model/UI2/system/lib/base/modelBase'); 

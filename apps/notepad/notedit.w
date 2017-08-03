@@ -19,6 +19,9 @@
           </div>
         </div> 
       </div>  
-    <div class="x-panel-content" xid="content1"/>
+    <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel2">
+   <div component="$UI/system/components/justep/contents/contents" class="x-contents x-full" active="0" xid="contents" slidable="true" swipe="true">
+    <div class="x-contents-content x-scroll-view" xid="normal">
+     <iframe src="./noteedit.html" xid="iframe2" width="100%" height="100%"></iframe></div> </div> </div></div>
   </div> 
 </div>

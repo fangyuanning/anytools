@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c6bUrUr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6bUrUr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c6bUrUr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6bUrUr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c6bUrUr" class="c6bUrUr"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmQ3QVz-iosstatusbar c6bUrUr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6bUrUr"> 
@@ -18,7 +18,16 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content c6bUrUr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6bUrUr"/>  
+    <div class="x-panel-content c6bUrUr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6bUrUr">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcn6bQvm-iosstatusbar c6bUrUr" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6bUrUr"> 
+        <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c6bUrUr" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true}" __cid="c6bUrUr"> 
+          <div class="x-contents-content x-scroll-view active c6bUrUr" xid="normal" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c6bUrUr"> 
+            <iframe src="$model/UI2/anytools/apps/notepad/noteedit.html" xid="iframe2" width="100%" height="100%" __cid="c6bUrUr" class="c6bUrUr"/>
+          </div> 
+        </div>  
+        <style __cid="c6bUrUr" class="c6bUrUr">.x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcn6bQvm-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>
+    </div>  
     <style __cid="c6bUrUr" class="c6bUrUr">.x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmQ3QVz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div> 
 </div>
