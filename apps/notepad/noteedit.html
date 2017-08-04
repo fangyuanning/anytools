@@ -29,20 +29,55 @@
 						'insertunorderedlist' ]
 				});
 				K('input[name=getHtml]').click(function(e) {
-					alert(editor.html());
+					if(top.window.notedit){
+						var obj = document.getElementById("selectim");
+						top.window.notedit.save(document.getElementById("titleinput").value,editor.html(),obj.value);
+					}
 				});
 				K('input[name=clear]').click(function(e) {
 					editor.html('');
 				});
 			});
+			
+			function initEdit(){
+				document.getElementById("texttitle").innerHTML = top.window.localize.getLocalize("notedit_title");
+				document.getElementById("textbody").innerHTML = top.window.localize.getLocalize("notedit_body");
+				document.getElementById("savebtn").setAttribute("value", top.window.localize.getLocalize("notedit_save"));
+				document.getElementById("clearbtn").setAttribute("value", top.window.localize.getLocalize("notedit_clear"));
+				document.getElementById("textselect").innerHTML = top.window.localize.getLocalize("notedit_important");
+				var obj = document.getElementById("selectim");
+				obj.add(new Option(top.window.localize.getLocalize("notedit_im1"),"1"));
+				obj.add(new Option(top.window.localize.getLocalize("notedit_im2"),"2"));
+				obj.add(new Option(top.window.localize.getLocalize("notedit_im3"),"3"));
+				obj.add(new Option(top.window.localize.getLocalize("notedit_im4"),"4"));
+				obj.add(new Option(top.window.localize.getLocalize("notedit_im5"),"5"));
+				//edit mode
+				if(top.window.notedit){
+					if(top.window.notedit.body)
+						editor.html(top.window.notedit.body);
+					if(top.window.notedit.title)
+						document.getElementById("titleinput").innerHTML = top.window.notedit.title;
+					if(top.window.notedit.vm)
+						obj.value = vm;
+				}
+				
+			};
 		</script>
 	</head>
-	<body>
+	<body onload='initEdit();'>
 		<form>
-			<textarea name="content" style="width:100%;height:400px;visibility:hidden;">KindEditor</textarea>
+		<span id="texttitle">请输入标题:</span>
+		<textarea id="titleinput" style="width:100%;height:20px;"></textarea>
+		<span id="textbody">请输入内容:</span>
+		<textarea name="content" style="width:100%;height:400px;visibility:hidden;"></textarea>
+		<p>
+		<span id="textselect">重要程度:</span>
+		<select id="selectim">
+		</select>
+		</p>
 			<p>
-				<input type="button" name="getHtml" value="取得HTML" />
-				<input type="button" name="clear" value="清空内容" />
+				<input id="savebtn" type="button" name="getHtml" value="取得HTML" style="width:100px;height:40px;"/>
+				<input id="clearbtn" type="button" name="clear" value="清空内容" style="width:100px;height:40px;"/>
 			</p>
 		</form>
 	</body>

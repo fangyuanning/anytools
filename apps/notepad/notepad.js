@@ -23,7 +23,9 @@ define(function(require){
 	};
 
 	Model.prototype.modelLoad = function(event){
-//this.comp("checkbox1").set({"checked": true});
+		window.notedit={};
+		window.notedit.save = this.saveData;
+
 	};
 
 	Model.prototype.modelParamsReceive = function(event){
@@ -47,12 +49,25 @@ define(function(require){
 	};
 
 	Model.prototype.button1Click = function(event){
-		justep.Shell.showPage("notetype");
+		//justep.Shell.showPage("notetype");
 	};
 	
 	Model.prototype.getFaceUrl = function(event){
 		//justep.Shell.showPage("notetype");
 		return "";
+	};
+	
+	Model.prototype.saveData = function(title,body,im){
+		alert(title);
+		alert(im);
+		this.comp("notedata").add({
+		title:title,
+		});
+		justep.Shell.showPage("notepad");
+	};
+
+	Model.prototype.row1Click = function(event){
+		event.$row;
 	};
 
 	return Model;

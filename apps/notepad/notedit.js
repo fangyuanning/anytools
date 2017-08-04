@@ -6,5 +6,9 @@ define(function(require){
 		this.callParent();
 	};
 
+	Model.prototype.modelLoad = function(event){
+
+	};
+
 	return Model;
 });

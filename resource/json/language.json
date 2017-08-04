@@ -74,6 +74,18 @@
   "uploaded_apps":{"zh_CN":"上传应用","en":"upload app"},
   "notepad_modtype":{"zh_CN":"修改类型","en":"modify type"},
   "notepad_edit":{"zh_CN":"新建","en":"New"},
+  "notedit_title":{"zh_CN":"请输入标题:","en":"New"},
+  "notedit_body":{"zh_CN":"请输入内容:","en":"New"},
+  "notedit_save":{"zh_CN":"保存","en":"Save"},
+  "notedit_clear":{"zh_CN":"清空","en":"Save"},
+  "notedit_password":{"zh_CN":"请输入密码:","en":"Input Password"},
+  "notedit_important":{"zh_CN":"重要程度:","en":"Input Password"},
+  "notedit_im1":{"zh_CN":"普通","en":"Normal"},
+  "notedit_im2":{"zh_CN":"重要","en":"Normal"},
+  "notedit_im3":{"zh_CN":"非常重要","en":"Normal"},
+  "notedit_im4":{"zh_CN":"极其重要","en":"Normal"},
+  "notedit_im5":{"zh_CN":"VIP","en":"Vip"},
+  
   
   
   
