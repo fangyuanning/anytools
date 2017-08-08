@@ -93,7 +93,7 @@ define(function(require){
 		}
 		var alldata = window.notedit.self.comp("notedata").toJson();
 		localStorage.setItem(window.notedit.self.STORE_NOTEBOOKDATA, JSON.stringify(alldata));
-		justep.Shell.closePage("noteedit");
+		justep.Shell.closePage("notedit");
 		justep.Shell.showPage("notepad");
 	};
 

@@ -26,15 +26,15 @@
       <span xid="span5" class="center-block" style="text-align:center;font-size:xx-large;background-color:#CDFF79;" bind-text="$model.getTitle()">essdofijsdofinihao</span></div> </div> 
     <div component="$UI/system/components/justep/row/row" class="x-row" xid="row6">
      <div class="x-col x-col-fixed" xid="col15">
-      <span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-html=" $model.getBodyHtml()">宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假</span></div> </div> 
+      <span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-html=" $model.getBodyHtml()"><![CDATA[]]></span></div> </div> 
     <div component="$UI/system/components/justep/row/row" class="x-row" xid="row7" style="border-top-style:solid;border-top-width:thin;height:30px;">
      <div class="x-col x-col-center" xid="col16">
       <span xid="span4" bind-html=' $model.getIm()'></span></div> 
      <div class="x-col x-col-fixed x-col-center" xid="col17" style="width:auto;">
-      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-label" label="button" xid="backbutton" icon="linear linear-license" onClick="backbuttonClick">
+      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-label" xid="backbutton" icon="linear linear-license" onClick="backbuttonClick">
    <i xid="i4" class="linear linear-license" style="height:40px;width:40px;"></i>
    <span xid="span9" bind-text='window.localize.getLocalize("notedit_back")'></span></a></div> 
      <div class="x-col x-col-center" xid="col18" style="text-align:right;">
-      <span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;height:20px;width:190px;" bind-text='$model.getDate()'>2017-7-30</span></div> </div> </div> </div></div>
+      <span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;height:20px;width:190px;" bind-text='$model.getDate()'><![CDATA[]]></span></div> </div> </div> </div></div>
   </div> 
 </div>

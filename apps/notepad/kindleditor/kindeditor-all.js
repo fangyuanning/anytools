@@ -4324,7 +4324,7 @@ _extend(KDialog, KWidget, {
 		var bodyDiv = K('<div class="ke-dialog-body"></div>');
 		contentDiv.append(bodyDiv);
 		bodyDiv.append(body);
-		var footerDiv = K('<div class="ke-dialog-footer"></div>');
+		var footerDiv = K('<div class="ke-dialog-footer" style="text-align:center;"></div>');
 		if (previewBtn || yesBtn || noBtn) {
 			contentDiv.append(footerDiv);
 		}
@@ -4851,9 +4851,9 @@ function KEditor(options) {
 	setOption('height', _undef(self.height, self.minHeight));
 	setOption('width', _addUnit(self.width));
 	setOption('height', _addUnit(self.height));
-	if (_MOBILE && (!_IOS || _V < 534)) {
-		self.designMode = false;
-	}
+//	if (_MOBILE && (!_IOS || _V < 534)) {
+//		self.designMode = false;
+//	}
 	self.srcElement = se;
 	self.initContent = '';
 	self.plugin = {};
@@ -7213,8 +7213,10 @@ KindEditor.plugin('image', function(K) {
 			'</div>',
 			'</div>'
 		].join('');
-		var dialogWidth = showLocal || allowFileManager ? 450 : 400,
-			dialogHeight = showLocal && showRemote ? 300 : 250;
+//		var dialogWidth = showLocal || allowFileManager ? 450 : 400,
+//			dialogHeight = showLocal && showRemote ? 300 : 250;
+		var dialogWidth = showLocal || allowFileManager ? 300 : 300;
+		var dialogHeight = showLocal && showRemote ? 300 : 300;
 		var dialog = self.createDialog({
 			name : name,
 			width : dialogWidth,
