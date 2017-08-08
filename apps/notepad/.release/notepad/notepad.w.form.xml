@@ -41,38 +41,35 @@
           </a>
         </div>
       </div>
-      <div component="$model/UI2/system/components/justep/list/list" class="x-list cE3MNvu" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;notedata&quot;,&quot;filter&quot;:&quot; $row.val(\&quot;content\&quot;)&quot;}" __cid="cE3MNvu"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cE3MNvu" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;notedata&quot;,&quot;filter&quot;:&quot; $model.canShow($row)&quot;}" __cid="cE3MNvu"> 
         <ul class="x-list-template hide cE3MNvu" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cE3MNvu"> 
           <li xid="li1" __cid="cE3MNvu" class="cE3MNvu">
             <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row1" bind-click="row1Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
-              <div class="x-col cE3MNvu" xid="col1" __cid="cE3MNvu">
-                <span xid="span4" bind-text="val(&quot;title&quot;)" __cid="cE3MNvu" class="cE3MNvu"/>  
+              <div class="x-col cE3MNvu" xid="col1" style="border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cE3MNvu">
                 <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
                   <div class="x-col x-col-center cE3MNvu" xid="col12" __cid="cE3MNvu">
-                    <span xid="span5" class="center-block cE3MNvu" style="text-align:center;font-size:xx-large;" bind-text="val(&quot;title&quot;)" __cid="cE3MNvu">essdofijsdofinihao</span>
+                    <span xid="span5" class="center-block cE3MNvu" style="text-align:center;font-size:xx-large;background-color:#CDFF79;" bind-text="val(&quot;title&quot;)" __cid="cE3MNvu">essdofijsdofinihao</span>
                   </div> 
                 </div>  
                 <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
                   <div class="x-col x-col-fixed cE3MNvu" xid="col15" style="overflow:hidden;height:60px;" __cid="cE3MNvu">
-                    <span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-text="val(&quot;content&quot;)" __cid="cE3MNvu" class="cE3MNvu">宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假</span>
+                    <span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-html="val(&quot;content&quot;)" __cid="cE3MNvu" class="cE3MNvu">宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假</span>
                   </div>
                 </div>  
-                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
-                  <div class="x-col cE3MNvu" xid="col16" __cid="cE3MNvu">
-                    <img src="$model/UI2/anytools/resource/face/801f91f21f54bfb449cc9c82840aa46e.gif" alt="" xid="image1" align="middle" height="60px" style="width:60px;" __cid="cE3MNvu" class="cE3MNvu"/>
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="row7" style="border-top-style:solid;border-top-width:thin;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
+                  <div class="x-col x-col-center cE3MNvu" xid="col16" __cid="cE3MNvu">
+                    <span xid="span4" bind-html=" $model.getIM(val(&quot;important&quot;))" __cid="cE3MNvu" class="cE3MNvu"/>
                   </div>  
-                  <div class="x-col cE3MNvu" xid="col17" __cid="cE3MNvu">
-                    <span xid="span8" __cid="cE3MNvu" class="cE3MNvu"/>
+                  <div class="x-col x-col-fixed x-col-center cE3MNvu" xid="col17" style="width:auto;" __cid="cE3MNvu"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cE3MNvu" xid="editbtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:editbtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-license&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cE3MNvu"> 
+                      <i xid="i4" class="linear linear-license cE3MNvu" style="height:40px;width:40px;" __cid="cE3MNvu"/>  
+                      <span xid="span9" bind-text="window.localize.getLocalize(&quot;notedit_edit&quot;)" __cid="cE3MNvu" class="cE3MNvu"/>
+                    </a> 
                   </div>  
-                  <div class="x-col x-col-center cE3MNvu" xid="col18" __cid="cE3MNvu">
-                    <span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;" bind-text="val(&quot;date&quot;)" __cid="cE3MNvu" class="cE3MNvu">2017-7-30</span>
+                  <div class="x-col x-col-center cE3MNvu" xid="col18" style="text-align:right;" __cid="cE3MNvu">
+                    <span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;height:20px;width:190px;" bind-text="val(&quot;date&quot;)" __cid="cE3MNvu" class="cE3MNvu">2017-7-30</span>
                   </div>
-                </div>  
-                <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3MNvu" xid="line" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3MNvu"> 
-                  <div class="x-col x-col-fixed x-col-center cE3MNvu" xid="col19" __cid="cE3MNvu">
-                    <img src="" alt="" xid="image2" __cid="cE3MNvu" class="cE3MNvu"/> 
-                  </div> 
-                </div>
+                </div> 
               </div> 
             </div>
           </li>

@@ -44,23 +44,23 @@
    <div class="x-col x-col-fixed x-col-center" xid="col5" style="width:auto;">
    <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="修改类型" xid="passbtn" onClick="button1Click">
    <i xid="i3"></i>
-   <span xid="span3" bind-text='window.localize.getLocalize("notepad_modtype")'>修改类型</span></a></div></div><div component="$UI/system/components/justep/list/list" class="x-list" xid="list1" data="notedata" filter=' $row.val("content")'>
+   <span xid="span3" bind-text='window.localize.getLocalize("notepad_modtype")'>修改类型</span></a></div></div><div component="$UI/system/components/justep/list/list" class="x-list" xid="list1" data="notedata" filter=' $model.canShow($row)'>
    <ul class="x-list-template" xid="listTemplateUl1">
     <li xid="li1"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row1" bind-click="row1Click">
-   <div class="x-col" xid="col1"><span xid="span4" bind-text='val("title")'></span>
-  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row5">
-   <div class="x-col x-col-center" xid="col12"><span xid="span5" class="center-block" style="text-align:center;font-size:xx-large;" bind-text='val("title")'><![CDATA[essdofijsdofinihao ]]></span></div>
+   <div class="x-col" xid="col1" style="border-style:solid solid solid solid;border-width:thin thin thin thin;"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row5">
+   <div class="x-col x-col-center" xid="col12"><span xid="span5" class="center-block" style="text-align:center;font-size:xx-large;background-color:#CDFF79;" bind-text='val("title")'><![CDATA[essdofijsdofinihao ]]></span></div>
    </div>
   <div component="$UI/system/components/justep/row/row" class="x-row" xid="row6">
-   <div class="x-col x-col-fixed" xid="col15" style="overflow:hidden;height:60px;"><span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-text='val("content")'><![CDATA[宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假]]></span></div></div>
-  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row7">
-   <div class="x-col" xid="col16"><img src="$UI/anytools/resource/face/801f91f21f54bfb449cc9c82840aa46e.gif" alt="" xid="image1" align="middle" height="60px" style="width:60px;"></img></div>
-   <div class="x-col" xid="col17"><span xid="span8"></span></div>
-   <div class="x-col x-col-center" xid="col18"><span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;" bind-text='val("date")'><![CDATA[2017-7-30]]></span></div></div>
-  <div component="$UI/system/components/justep/row/row" class="x-row" xid="line">
-   <div class="x-col x-col-fixed x-col-center" xid="col19"><img src="" alt="" xid="image2"></img>
+   <div class="x-col x-col-fixed" xid="col15" style="overflow:hidden;height:60px;"><span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-html='val("content")'><![CDATA[宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假]]></span></div></div>
+  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row7" style="border-top-style:solid;border-top-width:thin;height:30px;">
+   <div class="x-col x-col-center" xid="col16"><span xid="span4" bind-html=' $model.getIM(val("important"))'></span></div>
+   <div class="x-col x-col-fixed x-col-center" xid="col17" style="width:auto;">
+  <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-label" label="button" xid="editbtn" onClick="editbtnClick" icon="linear linear-license">
+   <i xid="i4" class="linear linear-license" style="height:40px;width:40px;"></i>
+   <span xid="span9" bind-text='window.localize.getLocalize("notedit_edit")'></span></a>
   </div>
-   </div></div>
+   <div class="x-col x-col-center" xid="col18" style="text-align:right;"><span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;height:20px;width:190px;" bind-text='val("date")'><![CDATA[2017-7-30]]></span></div></div>
+  </div>
    </div></li></ul> </div>
   </div>
   </div> 

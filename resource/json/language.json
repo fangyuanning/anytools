@@ -85,6 +85,8 @@
   "notedit_im3":{"zh_CN":"非常重要","en":"Normal"},
   "notedit_im4":{"zh_CN":"极其重要","en":"Normal"},
   "notedit_im5":{"zh_CN":"VIP","en":"Vip"},
+  "notedit_edit":{"zh_CN":"编辑","en":"Edit"},
+  "notedit_back":{"zh_CN":"返回","en":"Back"},
   
   
   

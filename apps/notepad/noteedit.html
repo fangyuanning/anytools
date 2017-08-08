@@ -31,7 +31,7 @@
 				K('input[name=getHtml]').click(function(e) {
 					if(top.window.notedit){
 						var obj = document.getElementById("selectim");
-						top.window.notedit.save(document.getElementById("titleinput").value,editor.html(),obj.value);
+						top.window.notedit.save(top.window.notedit.id,document.getElementById("titleinput").value,editor.html(),obj.value);
 					}
 				});
 				K('input[name=clear]').click(function(e) {

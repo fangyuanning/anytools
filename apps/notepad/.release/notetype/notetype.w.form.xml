@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cVZfmeq" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVZfmeq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cVZfmeq" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVZfmeq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVZfmeq" class="cVZfmeq"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMF3Unu-iosstatusbar cVZfmeq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVZfmeq"> 
@@ -18,7 +18,36 @@
         </div> 
       </div> 
     </div>  
-    <div class="x-panel-content cVZfmeq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZfmeq"/>  
+    <div class="x-panel-content cVZfmeq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZfmeq">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZfmeq" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZfmeq"> 
+        <div class="x-col cVZfmeq" xid="col1" style="border-style:solid solid solid solid;border-width:thin thin thin thin;" __cid="cVZfmeq"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZfmeq" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZfmeq"> 
+            <div class="x-col x-col-center cVZfmeq" xid="col12" __cid="cVZfmeq"> 
+              <span xid="span5" class="center-block cVZfmeq" style="text-align:center;font-size:xx-large;background-color:#CDFF79;" bind-text="$model.getTitle()" __cid="cVZfmeq">essdofijsdofinihao</span>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZfmeq" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZfmeq"> 
+            <div class="x-col x-col-fixed cVZfmeq" xid="col15" __cid="cVZfmeq"> 
+              <span xid="span6" style="text-align:left;font-size:medium;font-family:Arial;color:#008080;" bind-html=" $model.getBodyHtml()" __cid="cVZfmeq" class="cVZfmeq">宋帝国囧电脑是第几个哦死几个公共ijgisjgsdjfoisdj 狗isjdoifjodijf山东覅京东ifj发电方式是的佛ijdofdoifjdoij 哦地方就测试内容大小哦是覅点击覅圣诞节山东覅技术都放假</span>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZfmeq" xid="row7" style="border-top-style:solid;border-top-width:thin;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZfmeq"> 
+            <div class="x-col x-col-center cVZfmeq" xid="col16" __cid="cVZfmeq"> 
+              <span xid="span4" bind-html=" $model.getIm()" __cid="cVZfmeq" class="cVZfmeq"/>
+            </div>  
+            <div class="x-col x-col-fixed x-col-center cVZfmeq" xid="col17" style="width:auto;" __cid="cVZfmeq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cVZfmeq" xid="backbutton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backbuttonClick" data-config="{&quot;icon&quot;:&quot;linear linear-license&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVZfmeq"> 
+                <i xid="i4" class="linear linear-license cVZfmeq" style="height:40px;width:40px;" __cid="cVZfmeq"/>  
+                <span xid="span9" bind-text="window.localize.getLocalize(&quot;notedit_back&quot;)" __cid="cVZfmeq" class="cVZfmeq"/>
+              </a>
+            </div>  
+            <div class="x-col x-col-center cVZfmeq" xid="col18" style="text-align:right;" __cid="cVZfmeq"> 
+              <span xid="span7" style="text-align:right;font-size:medium;vertical-align:middle;height:20px;width:190px;" bind-text="$model.getDate()" __cid="cVZfmeq" class="cVZfmeq">2017-7-30</span>
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
     <style __cid="cVZfmeq" class="cVZfmeq">.x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMF3Unu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div> 
 </div>
